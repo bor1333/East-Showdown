@@ -1125,6 +1125,29 @@ create_equipment_variant = {
 	icon = "GFX_t72_ADB"
 }
 create_equipment_variant = {
+	name = "Курганец-25"
+	type = gm2_chassis
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_autogun
+		additional_armament_slot = tank_dop_machine_gun
+		at_armament_slot = tank_at_missle_9k135_4
+		engine_type_slot = tank_mengine_3
+		turret_type_slot = tank_mturret_b2
+		gruz_type_slot = tank_gruz_boek
+		armor_type_slot = tank_armor_m_2
+		electronic_type_slot = tank_elec_3
+		cyo_type_slot = tank_cyo_t_3
+		special_type_slot_1 = tank_o_rel_3
+		special_type_slot_2 = tank_kz_3
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "GFX_t72_ADB"
+}
+create_equipment_variant = {
 	name = "Т-80"
 	type = t80_chassis_0
 	parent_version = 0

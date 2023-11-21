@@ -739,6 +739,7 @@ equipments = {
 					tank_light_guns
 					tank_lightAA_missle
 					tank_mediumAA_missle
+					tank_light_guns
 				}
 			}
 
