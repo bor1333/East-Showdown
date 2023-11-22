@@ -3425,6 +3425,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/RUS1/GM_25.dds"
 	}
 	SpriteType = {
+		name = "GFX_gm2_AAС"
+		texturefile = "gfx/interface/technologies/RUS1/BMP_B_11.dds"
+	}
+	SpriteType = {
 		name = "GFX_gmh_AAB"
 		texturefile = "gfx/interface/technologies/UKR/2S7_Pion.dds"
 	}

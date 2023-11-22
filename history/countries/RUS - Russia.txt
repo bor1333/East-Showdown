@@ -1145,7 +1145,7 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	icon = "GFX_t72_ADB"
+	icon = "GFX_gm2_AAС"
 }
 create_equipment_variant = {
 	name = "Т-80"

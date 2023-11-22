@@ -156,7 +156,7 @@ default = {
 	gm2_chassis = {
 		pool = {
 			icons = { 
-				GFX_gm2_AAB
+				GFX_gm2_AAС
 			 }
 		}
 	}
