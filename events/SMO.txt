@@ -688,3 +688,32 @@ country_event = {
 		name = smo.15.a
     }
 }
+
+country_event = {
+    id = smo.16
+    title = smo.16.t
+    desc = smo.16.d
+
+    is_triggered_only = yes
+
+    option = {
+    name = smo.16.a
+    }
+}
+
+state_event = {
+    id = smo.17 
+    title = smo.17.t
+    desc = smo.17.d
+
+    is_triggered_only = yes
+
+    option = {
+    trigger = {
+    has_dynamic_modifier = {
+    modifier = sabotaged_resources
+    }
+    }
+    name = smo.17.a
+    }
+}

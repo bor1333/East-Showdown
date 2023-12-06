@@ -855,6 +855,9 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 			}
 			custom_effect_tooltip = targeted_sabotage_resources_2_tt
 		}
+		FROM = {
+		state_event = smo.17
+		}
 		ROOT = {
 			random = {
 			40 = {
@@ -864,6 +867,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 			}
 		   }
 		  }
+		country_event = smo.16
 		}
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
@@ -874,6 +878,9 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 				days = 60
 			}
 			custom_effect_tooltip = targeted_sabotage_resources_2_tt
+		}
+		FROM = {
+		state_event = smo.17
 		}
 	}
 	outcome_potential = {
@@ -986,6 +993,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 			}
 		  }
 		}
+		country_event = smo.16
 	  }
 	}
 	outcome_extra_execute = { # SCOPE_OPERATION
@@ -1096,6 +1104,7 @@ operation_kill_general = {
 				tag = FROM
 				token = token_drg
 			}
+			country_event = smo.16
 		}
 	   }
 	outcome_extra_execute = {
