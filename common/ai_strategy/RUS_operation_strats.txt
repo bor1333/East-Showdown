@@ -1,0 +1,105 @@
+RUS_counter_spy = {
+	allowed = {
+		tag = RUS
+	}
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 500
+		mission_target = RUS
+		num_operatives = 3
+	}
+}
+
+RUS_root_out_resistance = {
+	allowed = {
+		tag = RUS
+	}
+		enable = {
+			var:generic_operation_target = {
+			has_resistance = yes
+			}
+		}
+		
+	ai_strategy = {
+		type = operative_mission
+		mission = root_out_resistance
+		value = 9000
+		mission_target = var:generic_operation_target
+	}
+}
+
+
+RUS_operations_in_Ukraine = {
+	
+	ai_strategy = {
+		type = operation_equipment_priority
+		value = 100
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = propaganda
+		value = 900
+		mission_target = UKR
+	}
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 800
+		mission_target = UKR
+		state = 180
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 800
+		mission_target = UKR
+		state = 133
+	}
+
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 800
+		mission_target = UKR
+		state = 197
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_civilian
+		value = 1100
+		operation_target = UKR
+	}
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_drg_1
+		value = 1100
+		operation_target = UKR
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_drg_2
+		value = 1100
+		operation_target = UKR
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_kill_general
+		value = 1200
+		operation_target = UKR
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_targeted_sabotage_infrastructure
+		value = 1200
+		operation_target = UKR
+   }
+}

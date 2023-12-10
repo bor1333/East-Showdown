@@ -7,11 +7,11 @@ run_generic_operation = {
 			has_war = yes
 			exists = yes
 			has_capitulated = no
+			PREV = {
+				is_major = yes
+			}
 			NOT = { 
 				is_ally_with = PREV
-				PREV = {
-				is_major = no
-				}
 			}
 		}
 	}
@@ -21,13 +21,13 @@ run_generic_operation = {
 	ai_strategy = {
 		type = operative_operation
 		operation = var:generic_operation_type_to_run
-		value = 900
+		value = 9000
 		operation_target = var:generic_operation_target
 	}
 	
 	ai_strategy = {
 		type = operation_equipment_priority
-		value = 100
+		value = 10
 	}
 	
 	ai_strategy = {
@@ -44,24 +44,18 @@ run_generic_operation_add_more_operatives = {
 		NOT = { check_variable = { generic_operation_type_to_run = 0 } }
 		
 		var:generic_operation_target = {
-			any_neighbor_state = {
-				is_controlled_by = PREV
-			}
 			has_war = yes
 			exists = yes
 			has_capitulated = no
+			PREV = {
+				is_major = yes
+			}
 			NOT = { 
 				is_ally_with = PREV
-				PREV = {
-				is_major = no
-				}
 			}
 		}
 		num_of_operatives > 4
 	}
-	
-	abort_when_not_enabled = yes
-
 	
 	ai_strategy = {
 		type = operative_mission
@@ -81,6 +75,13 @@ run_generic_rescue_operation = {
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
+		type = operative_operation
+		operation = operation_rescue_operative
+		value = 1000
+		operation_target = var:rescue_operative_from
+	}
+	
+	ai_strategy = {
 		type = operation_equipment_priority
 		value = 100
 	}
@@ -90,5 +91,22 @@ run_generic_rescue_operation = {
 		mission = build_intel_network
 		value = 900
 		mission_target = var:rescue_operative_from
+	}
+}
+
+root_out_resistance_ai = {
+	enable = {
+		var:generic_operation_target = {
+		all_owned_state = {
+			has_resistance = yes
+		}
+		}
+	}
+    
+	ai_strategy = {
+		type = operative_mission
+		mission = root_out_resistance
+		value = 900
+		mission_target = var:generic_operation_target
 	}
 }
