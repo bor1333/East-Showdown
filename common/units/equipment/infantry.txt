@@ -527,7 +527,7 @@ equipments = {
 		ap_attack = 0
 		air_attack = 0
 
-		build_cost_ic = 12
+		build_cost_ic = 6.2
 		resources = {
 				steel = 3
 		}

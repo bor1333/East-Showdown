@@ -2854,6 +2854,16 @@ add_equipment_to_stockpile = {
 	producer = RUS
 }
 add_equipment_to_stockpile = {
+	type = hel_strike_equipment_6
+	amount = 160
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = hel_strike_equipment_7
+	amount = 48
+	producer = RUS
+}
+add_equipment_to_stockpile = {
 	type = rus_CAS_equipment_1	
 	amount = 50
 	producer = RUS

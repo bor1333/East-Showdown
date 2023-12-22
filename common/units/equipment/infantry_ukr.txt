@@ -511,7 +511,7 @@ equipments = {
 		ap_attack = 0
 		air_attack = 0
 
-		build_cost_ic = 10
+		build_cost_ic = 4.2
 		resources = {
 				steel = 2
 		}
@@ -530,7 +530,7 @@ equipments = {
 		ap_attack = 0
 		air_attack = 0
 
-		build_cost_ic = 12
+		build_cost_ic = 6.2
 		resources = {
 				steel = 3
 		}
