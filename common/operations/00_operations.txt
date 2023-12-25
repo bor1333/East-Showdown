@@ -89,8 +89,8 @@ operation_rescue_operative = { ### 0 1/35
 }
 
 operation_infiltrate_civilian = { ### 1 1/35
-	icon = GFX_operations_infiltrate_civilian_govt
-	map_icon = GFX_operations_infiltrate_civilian_govt_map
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
 	name = operation_infiltrate_civilian
 	desc = operation_infiltrate_civilian_desc
 	priority = 1
@@ -355,8 +355,8 @@ operation_fake_intel = { ### 2 1/40
 }
 
 operation_infiltrate_drg_1 = {
-	icon = GFX_operations_infiltrate_armed_forces
-	map_icon = GFX_operations_infiltrate_armed_forces_map
+	icon = GFX_operations_coordinated_strike
+	map_icon = GFX_operations_coordinated_strike_map
 	name = operation_infiltrate_drg_1
 	desc = operation_infiltrate_drg_desc
 	priority = 4
@@ -452,8 +452,8 @@ operation_infiltrate_drg_1 = {
 }
 
 operation_infiltrate_drg_2 = {
-	icon = GFX_operations_infiltrate_armed_forces
-	map_icon = GFX_operations_infiltrate_armed_forces_map
+	icon = GFX_operations_coordinated_strike
+	map_icon = GFX_operations_coordinated_strike_map
 	name = operation_infiltrate_drg_2
 	desc = operation_infiltrate_drg_desc
 	priority = 4
@@ -550,8 +550,8 @@ operation_infiltrate_drg_2 = {
 
 
 operation_infiltrate_armed_forces_army = { ### 4 1/55
-	icon = GFX_operations_infiltrate_armed_forces
-	map_icon = GFX_operations_infiltrate_armed_forces_map
+	icon = GFX_operations_make_resistance_contacts
+	map_icon = GFX_operations_make_resistance_contacts_map
 	name = operation_infiltrate_armed_forces_army
 	desc = operation_infiltrate_armed_forces_army_desc
 	priority = 4
@@ -1176,8 +1176,8 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 
 
 operation_kill_general = {
-	icon = GFX_operations_infiltrate_armed_forces
-	map_icon = GFX_operations_infiltrate_armed_forces_map
+	icon = GFX_operations_boost_resistance
+	map_icon = GFX_operations_boost_resistance_map
 	name = operation_kill_unit_leader
 	desc = operation_kill_unit_leader_desc
 	priority = 4
