@@ -293,6 +293,30 @@ create_equipment_variant = {
 	}
 	icon = "GFX_NTO_bronemashina3_AAB"
 }
+###Svinator
+create_equipment_variant = {
+	name = "Roshel Senator"
+	type = bronemashina3_chassis
+	parent_version = 0
+	modules = {
+		main_armament_slot = tank_heavy_machine_gun
+		engine_type_slot = tank_lengine_2
+		turret_type_slot = tank_lturret_2
+		gruz_type_slot = tank_desant_l
+		armor_type_slot = tank_armor_l_2
+		electronic_type_slot = tank_elec_4
+		cyo_type_slot = tank_cyo_a_2a
+		special_type_slot_1 = tank_o_rel_3
+		special_type_slot_2 = tank_armor_mina_2
+		special_type_slot_3 = tank_o_prip_2
+		special_type_slot_4 = tank_kz_1
+	}
+	upgrades = {
+		tank_nsb_engine_upgrade = 0
+		tank_nsb_armor_upgrade = 0
+	}
+	icon = "GFX_NTO_bronemashina3_AAB"
+}
 create_equipment_variant = {
 	name = "LAV 25"
 	type = btr1_chassis
@@ -1438,7 +1462,12 @@ add_equipment_to_stockpile = {
 	amount = 131
 	producer = NTO
 } 
-
+add_equipment_to_stockpile = {
+type = bronemashina3_chassis
+	variant_name = "Roshel Senator"
+	amount = 2000
+	producer = NTO
+} 
 add_equipment_to_stockpile = {
 	type = nto_CAS_equipment_1
 	amount = 600
