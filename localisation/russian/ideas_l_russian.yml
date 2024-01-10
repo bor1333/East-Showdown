@@ -28,6 +28,8 @@
  generic_idea_army_rez_desc: "Эта страна начала подготовку резервов на крайний случай."
  generic_idea_speed_course: "Ускоренный курс обучения"
  generic_idea_speed_course_desc: "Эта страна понизила минимальный уровень подготовки бойцов, что отрицательно сказалось на их боеспособности."
+hacked_civilian_network_infrastructure: "Хакеры взломали нашу сетевую инфраструктуру!"
+hacked_army_network_infrastructure: "Хакеры взломали нашу сетевую инфраструктуру!"
  #BOR
   BOR_Chechnya_True_Borders: "Настоящие Границы Чечни"
  #Украина

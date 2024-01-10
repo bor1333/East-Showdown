@@ -67,6 +67,41 @@ branch_intelligence = {
 		}
 		
 	}
+
+	upgrade_network_servers = {
+		picture = GFX_agency_suicide_pills
+		sound = Spy_Agency_Intel_Upgrades_Confirm
+		ai_will_do = {
+			factor = 10
+		}
+		modifiers_during_progress = {
+			civilian_factory_use = 10
+		}
+		level = {
+			modifier = {
+				civilian_intel_decryption_bonus = 1
+				army_intel_decryption_bonus = 1
+				navy_intel_decryption_bonus = 1
+				airforce_intel_decryption_bonus = 1
+			}
+		}
+		level = {
+			modifier = {
+				civilian_intel_decryption_bonus = 2
+				army_intel_decryption_bonus = 2
+				navy_intel_decryption_bonus = 2
+				airforce_intel_decryption_bonus = 2
+			}
+		}
+		level = {
+			modifier = {
+				civilian_intel_decryption_bonus = 2
+				army_intel_decryption_bonus = 2
+				navy_intel_decryption_bonus = 2
+				airforce_intel_decryption_bonus = 2
+			}
+		}
+	}
 }
 
 branch_defense = {
@@ -207,7 +242,7 @@ branch_operation = {
 		}
 		
 	}
-	
+
 }
 
 branch_operative = {
@@ -325,5 +360,7 @@ branch_operative = {
 		}
 		
 	}
+
+
 	
 }

@@ -1267,3 +1267,155 @@ operation_kill_general = {
 		exfiltration_go_to_ground = { base = 100 }
 	}
 }
+
+operation_cyberattack_civilian_infrastructure = {
+	map_icon = GFX_operations_boost_resistance_map
+	icon = GFX_operations_rescue_captured_operative
+	name = cyberattack_civilian_infrastructure
+	desc = cyberattack_civilian_infrastructure_desc
+	priority = 0
+
+	days = 7
+	network_strength = 5
+	operatives = 1
+
+	visible = {
+
+	network_national_coverage = {
+		target = FROM
+		value > 0
+	}
+
+	has_done_agency_upgrade = upgrade_network_servers
+
+	}
+
+	available = {
+		
+	}
+
+	equipment = {
+		
+	}
+	risk_chance = 0.1
+	experience = 2
+	cost_multiplier = 0 # we dont scale in cost for rescues
+
+	outcome_execute = { # SCOPE_OPERATION
+		FROM = {
+		add_timed_idea = {
+			idea = hacked_civilian_network_infrastructure
+			days = 45
+		}
+		add_intel = {
+			target = FROM
+			civilian_intel = 10
+			airforce_intel = 5
+		}
+	  }
+	}
+
+	outcome_potential = {
+		FROM = {
+			add_timed_idea = {
+				idea = hacked_civilian_network_infrastructure
+				days = 45
+			}
+		}
+		add_intel = {
+			target = FROM
+			civilian_intel = 10
+			airforce_intel = 5
+		}
+	}
+	outcome_extra_execute = {
+		add_intel = {
+			target = FROM
+			civilian_intel = 10
+			airforce_intel = 5
+		}
+    }
+
+	phases = { #infiltration
+		cyberattack_in_network = { base = 100 }
+	}
+	phases = { #exfiltration
+		hack_civilian_network_infractructure = { base = 100 }
+	}
+}
+operation_cyberattack_army_infrastructure = {
+	map_icon = GFX_operations_boost_resistance_map
+	icon = GFX_operations_rescue_captured_operative
+	name = cyberattack_army_infrastructure
+	desc = cyberattack_army_infrastructure_desc
+	priority = 0
+
+	days = 7
+	network_strength = 5
+	operatives = 1
+
+	visible = {
+
+	network_national_coverage = {
+		target = FROM
+		value > 0
+	}
+
+	has_done_agency_upgrade = upgrade_network_servers
+		
+	}
+
+	available = {
+		
+	}
+
+	equipment = {
+		
+	}
+	risk_chance = 0.1
+	experience = 2
+	cost_multiplier = 0 # we dont scale in cost for rescues
+
+	outcome_execute = { # SCOPE_OPERATION
+		FROM = {
+			add_timed_idea = {
+			idea = hacked_army_network_infrastructure
+			days = 45
+		}
+		add_intel = {
+			target = FROM
+			airforce_intel = 5
+			army_intel = 10
+		}
+	  }
+	}
+
+	outcome_potential = {
+		FROM = {
+			add_timed_idea = {
+			idea = hacked_army_network_infrastructure
+			days = 45
+		}
+	}
+		add_intel = {
+			target = FROM
+			airforce_intel = 5
+			army_intel = 10
+		}
+	}
+
+	outcome_extra_execute = {
+		add_intel = {
+			target = FROM
+			army_intel = 10
+			airforce_intel = 5
+		}
+    }
+
+	phases = { #infiltration
+		cyberattack_in_network = { base = 100 }
+	}
+	phases = { #exfiltration
+		hack_army_network_infractructure = { base = 100 }
+	}
+}

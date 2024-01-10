@@ -405,6 +405,34 @@ ideas = {
 			}
 
 		}
+		hacked_civilian_network_infrastructure = {
+
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				free_repair_factor = -0.2
+				stability_factor = -0.1
+				political_power_factor = -0.2
+			}
+		}
+		hacked_army_network_infrastructure = {
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				planning_speed = -0.3
+				max_planning_factor = -0.3
+				command_power_gain_mult = -0.5
+                political_power_factor = -0.1
+				supply_node_range = -0.2
+				supply_factor = -0.2
+				ground_attack_factor = -0.2
+			}
+		}
 		
 	}
 

@@ -19,3 +19,27 @@ targeted_enemy_unit_leader = {
 	equipment = {
     }
 }
+cyberattack_in_network = {
+	name = cyberattack_in_network
+	desc = cyberattack_in_network_desc
+	outcome = cyberattack_in_network_outcome
+	risk_extra = cyberattack_in_network_fail
+	picture = "GFX_phase_exfiltration_go_to_ground"
+	icon = "GFX_phase_exfiltration_go_to_ground_small"
+}
+hack_civilian_network_infractructure = {
+	name = hack_civilian_network_infractructure
+	desc = hack_civilian_network_infractructure_desc
+	outcome = hack_civilian_network_infractructure_outcome
+	risk_extra = hack_civilian_network_infractructure_fail
+	picture = "GFX_phase_exfiltration_go_to_ground"
+	icon = "GFX_phase_exfiltration_go_to_ground_small"
+}
+hack_army_network_infractructure = {
+	name = hack_army_network_infractructure
+	desc = hack_army_network_infractructure_desc
+	outcome = hack_army_network_infractructure_outcome
+	risk_extra = hack_army_network_infractructure_fail
+	picture = "GFX_phase_exfiltration_go_to_ground"
+	icon = "GFX_phase_exfiltration_go_to_ground_small"
+}
