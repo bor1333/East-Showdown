@@ -79,26 +79,26 @@ branch_intelligence = {
 		}
 		level = {
 			modifier = {
-				civilian_intel_decryption_bonus = 1
-				army_intel_decryption_bonus = 1
-				navy_intel_decryption_bonus = 1
-				airforce_intel_decryption_bonus = 1
+				intel_from_operatives_factor = 0.1
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.1
+		    }
+		}
+		level = {
+			modifier = {
+				intel_from_operatives_factor = 0.15
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.1
 			}
 		}
 		level = {
 			modifier = {
-				civilian_intel_decryption_bonus = 2
-				army_intel_decryption_bonus = 2
-				navy_intel_decryption_bonus = 2
-				airforce_intel_decryption_bonus = 2
-			}
-		}
-		level = {
-			modifier = {
-				civilian_intel_decryption_bonus = 2
-				army_intel_decryption_bonus = 2
-				navy_intel_decryption_bonus = 2
-				airforce_intel_decryption_bonus = 2
+				intel_from_operatives_factor = 0.2
+				civilian_intel_factor = 0.05
+				army_intel_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.1
 			}
 		}
 	}
