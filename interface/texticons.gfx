@@ -1676,4 +1676,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Nuke_Nuclear_Radioactive.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_arrow_down_white"
+		textureFile = "gfx//interface//arrow_down_white.dds"
+		alwaystransparent = yes
+	}
 }
