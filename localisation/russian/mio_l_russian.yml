@@ -1,5 +1,5 @@
 ﻿l_russian:
-####Ryssia
+####Russia
  RUS_uralvagonzavod: "Уралвагонзавод"
  RUS_koncern_kalahsnikov: "Концерн Калашникова"
  RUS_KAMAZ: "Камаз"
@@ -9,7 +9,7 @@
  RUS_ZID: "Завод имени Дегтярёва"
  RUS_gorkovskymashinostroyzavod: "Нижегородский машиностроительный завод"
  RUS_omskzavodtransport: "Омский завод транспортного машиностроения"
-
+ mio_cat_russian_tanks: "Танки"
 
 
 
@@ -55,6 +55,6 @@
  improvement_of_self_propelled_head: "Головки Наведения"
  list_of_kilo: "Наведение новых катков для гусениц"
  list_of_kilos: "Модернизация Боеприпасов"
- list_of_kiloss: "Модернизация Боеприпасов"
- list_of_kilosss: "Наведение новых катков для гусениц"
- list_of_kilossss: "Модернизация Боеприпасов"
+ list_of_kiloss: "Модернизация Взрывателя Фугаса"
+ list_of_kilosss: "Улучшение Двигателя"
+ list_of_kilossss: "Модернизия Систем наведения"

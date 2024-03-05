@@ -239,7 +239,7 @@ division_template = {
 division_template = {
 	name = "Rosgvardiya"	
 	force_allow_recruiting = yes
-	division_names_group = RUS_INF_01
+	division_names_group = RUS_Rosgvardiya_names_group
 	#division_names_group = RUS_RART_01 # Группа названий для дивизий, необязательно
 	regiments = {
 		infantry = {
@@ -307,6 +307,56 @@ division_template = {
 		opolchenie = {
 			x = 0
 			y = 3
+		}
+	}
+}
+
+division_template = {
+	name = "Batalion BARS"	# Tanki vrym vrym
+	force_allow_recruiting = yes
+	is_locked = yes
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		BTR = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		field_hospital = {
+			x = 0
+			y = 1
+		}
+		signal_company = {
+			x = 0
+			y = 2
+		}
+		recon = {
+			x = 0
+			y = 3
+		}
+		sniper = {
+			x = 1
+			y = 0
+		}		#не баг
+		atgm = {
+			x = 1
+			y = 1
+		}	
+		mortar = {
+			x = 1
+			y = 2
 		}
 	}
 }
@@ -593,7 +643,7 @@ division_template = {
 
 division_template = {
 	name = "Light paratrooper"
-	is_locked = no
+	is_locked = yes
 	division_names_group = RUS_PAR_03
 	regiments = {
 		paratrooper = {
@@ -3072,7 +3122,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 48
 		}
-		location = 9512
+		location = 2075
 		division_template = "Artileriysky batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4140,7 +4190,7 @@ units = {
 
 	division = {
 		name = "281-yy otdel'nyy otryad spetsial'nogo naznacheniya 24-ya otdel'naya Brandenburgskaya brigada spetsial'nogo naznacheniya"
-		location = 18729
+		location = 15909
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4163,7 +4213,7 @@ units = {
 
 	division = {
 		name = "3-y tankovyy batal'on 68-oy gvardeyskiy tankovyy Zhitomirsko-Berlinskiy polk"
-		location = 16125
+		location = 16085
 		division_template = "Batalion T72" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4171,7 +4221,7 @@ units = {
 
 	division = {
 		name = "1-y artileriyskiy batal'on 68-oy gvardeyskiy tankovyy Zhitomirsko-Berlinskiy polk"
-		location = 16125
+		location = 16085
 		division_template = "Artileriysky batalion" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4179,7 +4229,7 @@ units = {
 
 	division = {
 		name = "3-y tankovyy batal'on 163-y gvardeyskiy tankovyy Nezhinskiy polk"
-		location = 5407
+		location = 1393
 		division_template = "Batalion T72" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4187,7 +4237,7 @@ units = {
 
 	division = {
 		name = "1-y artileriyskiy batal'on 163-y gvardeyskiy tankovyy Nezhinskiy polk"
-		location = 5407
+		location = 1393
 		division_template = "Artileriysky batalion" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4195,7 +4245,7 @@ units = {
 
 	division = {
 		name = "1-y tankovyy batal'on 102-oy motostrelkovyy Slonimsko-Pomeranskiy polk"
-		location = 15082
+		location = 8283
 		division_template = "Batalion T72" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4203,7 +4253,7 @@ units = {
 
 	division = {
 		name = "1-y artileriyskiy batal'on 102-oy motostrelkovyy Slonimsko-Pomeranskiy polk"
-		location = 15082
+		location = 8283
 		division_template = "Artileriysky batalion" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4211,7 +4261,7 @@ units = {
 
 	division = {
 		name = "1-y tankovyy batal'on 103-y motostrelkovyy polk"
-		location = 1492
+		location = 10964
 		division_template = "Batalion T72" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4219,7 +4269,7 @@ units = {
 
 	division = {
 		name = "1-y artileriyskiy batal'on 103-y motostrelkovyy polk"
-		location = 1492
+		location = 10964
 		division_template = "Artileriysky batalion" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4227,7 +4277,7 @@ units = {
 
 	division = {
 		name = "2-y artileriyskiy batal'on 205-y otdel'naya motostrelkovaya brigada"
-		location = 1492
+		location = 10964
 		division_template = "Artileriysky batalion" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4235,21 +4285,21 @@ units = {
 
 	division = {
 		name = "1-yy motostrelkovyy batal'on 7-oy otdel'nyy gvardeyskiy motostrelkovyy polk"
-		location = 15830
+		location = 16021
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
 	}
 	division = {
 		name = "2-yy motostrelkovyy batal'on 7-oy otdel'nyy gvardeyskiy motostrelkovyy polk"
-		location = 15830
+		location = 16021
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
 	}
 	division = {
 		name = "3-yy motostrelkovyy batal'on 7-oy otdel'nyy gvardeyskiy motostrelkovyy polk"
-		location = 15830
+		location = 16021
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4257,7 +4307,7 @@ units = {
 
 	division = {
 		name = "1-yy artileriyskiy batal'on 7-oy otdel'nyy gvardeyskiy motostrelkovyy polk"
-		location = 5074
+		location = 18863
 		division_template = "Artileriysky batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4265,7 +4315,7 @@ units = {
 
 	division = {
 		name = "1-yy artileriyskiy batal'on 80-oy otdel'nyy motostrelkovyy brigady"
-		location = 5074
+		location = 18863
 		division_template = "Artileriysky batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4273,7 +4323,7 @@ units = {
 
 	division = {
 		name = "1-yy tankovoy batal'on 71-y otdel'nyy motostrelkovyy polk"
-		location = 2117
+		location = 18869
 		division_template = "Batalion T72"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4281,14 +4331,14 @@ units = {
 
 	division = {
 		name = "1-yy artileriyskiy batal'on 71-y otdel'nyy motostrelkovyy polk"
-		location = 2117
+		location = 18869
 		division_template = "Artileriysky batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
 	}
 	division = {
 		name = "2-yy artileriyskiy batal'on 71-y otdel'nyy motostrelkovyy polk"
-		location = 2117
+		location = 18869
 		division_template = "Artileriysky batalion"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.01
@@ -4296,21 +4346,21 @@ units = {
 
 	division = {
 		name = "1-yy otdel'nyy otryad spetsial'nogo naznacheniya 22-ya otdel'naya gvardeyskaya brigada spetsial'nogo naznacheniya"
-		location = 9990
+		location = 9557
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		name = "2-yy otdel'nyy otryad spetsial'nogo naznacheniya 22-ya otdel'naya gvardeyskaya brigada spetsial'nogo naznacheniya"
-		location = 2332
+		location = 18864
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division = {
 		name = "3-yy otdel'nyy otryad spetsial'nogo naznacheniya 22-ya otdel'naya gvardeyskaya brigada spetsial'nogo naznacheniya"
-		location = 14598
+		location = 16197
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4318,7 +4368,7 @@ units = {
 
 	division = {
 		name = "162-y otdel'nyy razvedyvatel'nyy batal'on 7-aya gvardeyskaya desantno-shturmovaya diviziya"
-		location = 14598
+		location = 16197
 		division_template = "Pechotniy batalion" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4326,7 +4376,7 @@ units = {
 
 	division = {
 		name = "70-y otdel'nyy otryad spetsial'nogo naznacheniya 2-ya otdel'naya gvardeyskaya brigada spetsial'nogo naznacheniya"
-		location = 18621
+		location = 19200
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4334,7 +4384,7 @@ units = {
 
 	division = {
 		name = "329-y otdel'nyy otryad spetsial'nogo naznacheniya 2-ya otdel'naya gvardeyskaya brigada spetsial'nogo naznacheniya"
-		location = 18621
+		location = 19200
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4342,7 +4392,7 @@ units = {
 
 	division = {
 		name = "700-y otdel'nyy otryad spetsial'nogo naznacheniya 2-ya otdel'naya gvardeyskaya brigada spetsial'nogo naznacheniya"
-		location = 18621
+		location = 19200
 		division_template = "Pechotniy batalion" #изменить на ССО
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4350,7 +4400,7 @@ units = {
 
 	division = {
 		name = "173-y otdel'nyy razvedyvatel'nyy batal'on 106-aya gvardeyskaya desantno-shturmovaya diviziya"
-		location = 18574
+		location = 3681
 		division_template = "Pechotniy batalion" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -4723,7 +4773,7 @@ units = {
 		location = 11020
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 
 	division = {
@@ -4731,7 +4781,7 @@ units = {
 		location = 11020
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4739,7 +4789,7 @@ units = {
 		location = 4049
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4747,7 +4797,7 @@ units = {
 		location = 18200
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4755,7 +4805,7 @@ units = {
 		location = 12956
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4763,7 +4813,7 @@ units = {
 		location = 18184
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4771,7 +4821,7 @@ units = {
 		location = 17121
 		division_template = "Rosgvardiya"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4779,7 +4829,7 @@ units = {
 		location = 16879
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4787,7 +4837,7 @@ units = {
 		location = 15436
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4795,7 +4845,7 @@ units = {
 		location = 18123
 		division_template = "Motostrelkoviy batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4803,7 +4853,7 @@ units = {
 		location = 12994
 		division_template = "Rosgvardiya"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4811,7 +4861,7 @@ units = {
 		location = 17067
 		division_template = "Rosgvardiya"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4819,7 +4869,7 @@ units = {
 		location = 12580
 		division_template = "Rosgvardiya"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4827,7 +4877,7 @@ units = {
 		location = 17162
 		division_template = "Rosgvardiya"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4835,7 +4885,7 @@ units = {
 		location = 17120
 		division_template = "Artileriysky batalion"
 		start_experience_factor = 0.6
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4843,7 +4893,7 @@ units = {
 		location = 11143
 		division_template = "Spetsnaz"
 		start_experience_factor = 0.8
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4851,7 +4901,7 @@ units = {
 		location = 9170
 		division_template = "Spetsnaz"
 		start_experience_factor = 0.8
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4859,7 +4909,7 @@ units = {
 		location = 9251
 		division_template = "Spetsnaz"
 		start_experience_factor = 0.8
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4867,7 +4917,7 @@ units = {
 		location = 17162
 		division_template = "Spetsnaz"
 		start_experience_factor = 0.8
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
 	}
 	
 	division = {
@@ -4875,7 +4925,32 @@ units = {
 		location = 14244
 		division_template = "Spetsnaz"
 		start_experience_factor = 0.8
-		start_equipment_factor = 1
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "604-y Krasnoznamyonniy centr special'nogo naznacheniya «Vityaz'»"
+		location = 18188
+		officer = {
+			name = "Alexander Beloglazov"
+			portraits = {
+		        army = {
+				    large = GFX_RUS_Alexander_Beloglazov
+				    small = GFX_RUS_Alexander_Beloglazov_small
+			    }
+		    }
+		}
+		division_template = "Spetsnaz"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
+	}
+	
+	division = {
+		name = "346-ya OBrSpN GRU"
+		location = 10281
+		division_template = "Spetsnaz"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.01
 	}
 }	
 
