@@ -5,6 +5,10 @@ state = {
 
 	state_category = metropolis
 
+	provinces = {
+		195 1023 1142 1427 1509 1539 1584 1600 1661 1913 1934 2262 2761 2861 3061 3290 3888 3975 4271 4400 4865 5407 5715 5890 6147 6343 6914 7339 7403 7411 7950 8151 8212 8336 8824 8831 8950 8963 9265 9305 9737 9748 11034 11584 12312 12420 12552 12644 12700 12838 13666 14799 14942 14961 15022 15082 15188 15966 15976 16034 16045 16081 16185 16217 16237 16285 16302 16316 18149 18150 18151 18153 18154 18155 18156 18157 18158 18159 18160 18506 18508 18509 18510 18574 18583 18584 18590 18675 18739 18743 18769 18813 
+	}
+
 	resources = {
 		steel = 45
 		tungsten = 6
@@ -12,27 +16,26 @@ state = {
 	}
 
 	history = {
-		owner = DNR
+		owner = DPR
 		
 		victory_points = { 1661 305 }
 		victory_points = { 1934 2 }
-		victory_points = { 2262 27 }
+		victory_points = { 2262 15 }
 		victory_points = { 4271 3 }
-		victory_points = { 5715 34 }
+		victory_points = { 5715 15 }
 		victory_points = { 6147 2 }
 		victory_points = { 7950 4 }
 		victory_points = { 9737 2 }
+		victory_points = { 9748 5 }
 		victory_points = { 12420 2 }
 		victory_points = { 12552 113 }
 		victory_points = { 12644 2 }
 		victory_points = { 15976 2 }
-		victory_points = { 18148 4 }
-		victory_points = { 18149 36 }
-		victory_points = { 18150 36 }
-		victory_points = { 18151 28 }
-		victory_points = { 18152 5 }
-		victory_points = { 18153 35 }
-		victory_points = { 18154 32 }
+		victory_points = { 18149 15 }
+		victory_points = { 18150 15 }
+		victory_points = { 18151 15 }
+		victory_points = { 18153 15 }
+		victory_points = { 18154 15 }
 		victory_points = { 18155 3 }
 		victory_points = { 18156 20 }
 		victory_points = { 18157 36 }
@@ -49,9 +52,9 @@ state = {
 		victory_points = { 18584 5 }
 		victory_points = { 18590 5 }
 		victory_points = { 18675 3 }
-		victory_points = { 18739 36 }
+		victory_points = { 18739 15 }
 		victory_points = { 18743 6 }
-		victory_points = { 18813 56 }
+		victory_points = { 18813 15 }
 		
 		buildings = {
 			infrastructure = 3
@@ -59,6 +62,7 @@ state = {
 			industrial_complex = 10
 			anti_air_building = 3
 			ammunition_plant = 1
+			ammunition_silo = 1
 
 			1023 = { bunker = 7 }
 			1142 = { bunker = 2 }
@@ -114,12 +118,8 @@ state = {
 			18813 = { bunker = 6 }
 		}
 		
-		add_core_of = DNR
+		add_core_of = DPR
 		add_claim_by = UKR
-	}
-
-	provinces = {
-		195 1023 1142 1427 1509 1539 1584 1600 1661 1913 1934 2262 2761 2861 3061 3290 3888 3975 4271 4400 4865 5407 5715 5890 6147 6343 6914 7339 7403 7411 7950 8151 8212 8336 8824 8831 8950 8963 9265 9305 9737 9748 11034 11584 12312 12420 12552 12644 12700 12838 13666 14799 14942 14961 15022 15082 15188 15966 15976 16034 16045 16081 16185 16217 16237 16285 16302 16316 18149 18150 18151 18153 18154 18155 18156 18157 18158 18159 18160 18506 18508 18509 18510 18574 18583 18584 18590 18675 18739 18743 18769 18813 
 	}
 
 }

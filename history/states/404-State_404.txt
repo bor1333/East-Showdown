@@ -1,20 +1,18 @@
 state = {
 	id = 404
-	name = "STATE_404"
+	name = "BORDER_STATES"
 	manpower = 1
 
 	state_category = metropolis
 
+	provinces = {
+		18236 18237 18246 18247 
+	}
+
 	history = {
 		owner = BOR
 		
-		victory_points = { 18237 30 }
-		
 		add_core_of = BOR
-	}
-
-	provinces = {
-		18236 18237 18246 18247 
 	}
 
 }

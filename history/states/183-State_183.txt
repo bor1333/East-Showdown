@@ -5,13 +5,17 @@ state = {
 
 	state_category = town
 
+	provinces = {
+		434 4030 4670 5758 8477 9958 10617 11173 12086 15770 15865 15943 18730 18731 18732 19196 19197 19198 19202 
+	}
+
 	resources = {
 		gas = 12
 		aluminium = 30
 	}
 
 	history = {
-		owner = LNR
+		owner = LPR
 		
 		victory_points = { 434 5 }
 		victory_points = { 4030 2 }
@@ -32,12 +36,8 @@ state = {
 			15770 = { bunker = 4 }
 		}
 		
-		add_core_of = LNR
+		add_core_of = LPR
 		add_claim_by = UKR
-	}
-
-	provinces = {
-		434 4030 4670 5758 8477 9958 10617 11173 12086 15770 15865 15943 18730 18731 18732 19196 19197 19198 19202 
 	}
 
 }

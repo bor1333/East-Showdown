@@ -19,3 +19,6 @@ generic_ammo_silo_protection = {
 		}
 	}
 }
+
+generic_casualties = {
+}

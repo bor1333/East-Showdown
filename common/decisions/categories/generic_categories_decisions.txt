@@ -1,7 +1,7 @@
 generic_ammo_silo_protection = {
     icon = generic_formable_nations
 
-    priority = 10 # i dont know what this does but dont change it
+    priority = 10
 
     visible_when_empty = yes
     allowed = {
@@ -14,4 +14,19 @@ generic_ammo_silo_protection = {
 			has_country_flag = himars_ammo_silo_protection
 		}
     }
+}
+
+generic_casualties = {
+	icon = GFX_generic_casualties
+
+	visible = {
+		OR = {
+			has_war = yes
+			check_variable = { casualties_k > 0 }
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = 205
 }

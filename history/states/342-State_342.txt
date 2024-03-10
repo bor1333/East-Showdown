@@ -5,6 +5,10 @@ state = {
 
 	state_category = metropolis
 
+	provinces = {
+		416 799 4332 9948 16983 
+	}
+
 	history = {
 		owner = ROM
 		
@@ -16,13 +20,10 @@ state = {
 			industrial_complex = 10
 			anti_air_building = 4
 			air_base = 1
+			ammunition_silo = 1
 		}
 		
 		add_core_of = ROM
-	}
-
-	provinces = {
-		416 799 4332 9948 16983 
 	}
 
 }

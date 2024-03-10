@@ -20,3 +20,5 @@ map/colour_generator.java
 *.jar
 map/unique_colours.gpl
 .vscode/settings.json
+.vscode/settings.json
+descriptor.mod

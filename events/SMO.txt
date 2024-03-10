@@ -151,8 +151,8 @@ country_event = {
   #  fire_only_once = yes
   #  option = {
   #      name = smo.2.a
-  #      add_to_faction = LNR
-    #    add_to_faction = DNR
+  #      add_to_faction = LPR
+    #    add_to_faction = DPR
    #     set_variable = {
    #         var = global.escalation
     #        value = 0
@@ -401,6 +401,10 @@ country_event = {
                 id = news.7
                 hours = 6
             }
+			news_event = { 
+                id = word.1
+                days = 4
+            }
 			random_list = {
 			    40 = { country_event = { id = rus.34 days = 402 } }
 			    60 = { country_event = { id = rus.35 days = 402 } }
@@ -412,13 +416,13 @@ country_event = {
                 target = UKR
                 type = annex_everything
             }
-			DNR = {
+			DPR = {
                 declare_war_on = {
                     target = UKR
                     type = annex_everything
                 }
             } 
-            LNR = {
+            LPR = {
                 declare_war_on = {
                     target = UKR
                     type = annex_everything
@@ -437,13 +441,13 @@ country_event = {
                 target = UKR
                 type = annex_everything
             }
-			DNR = {
+			DPR = {
                 declare_war_on = {
                     target = UKR
                     type = annex_everything
                 }
             }
-            LNR = {
+            LPR = {
                 declare_war_on = {
                     target = UKR
                     type = annex_everything
@@ -475,11 +479,10 @@ country_event = {
 
     option = {
         name = smo.9.a
+    }
 
+    immediate = {
 		hidden_effect = {
-                        vladimir_putin = {
-                             unit_leader_event = putin_mission.1
-                        }
 			country_event = {
 				id = rus.15
 				hours = 10
@@ -488,41 +491,43 @@ country_event = {
                 id = news.6 
                 hours = 6 
             }
-			random_list = {
-			    40 = { country_event = { id = rus.34 days = 402 } }
-			    60 = { country_event = { id = rus.35 days = 402 } }
-	        }
+			news_event = { 
+                id = word.1
+                days = 4
+            }
+			RUS = {
+                declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+            }
+		    DPR = {
+                declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+            }
+		    LPR = {
+                declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+            }
+		    CHE = {
+                declare_war_on = {
+                    target = UKR
+                    type = annex_everything
+                }
+            }
+			POL = {
+                complete_national_focus = POL_we_are_with_you
+            }
+			mark_focus_tree_layout_dirty = yes
+			UKR = {
+                mark_focus_tree_layout_dirty = yes
+				complete_national_focus = War
+            }
 		}
-
-		RUS = {
-            declare_war_on = {
-                target = UKR
-                type = annex_everything
-            }
-        }
-		DNR = {
-            declare_war_on = {
-                target = UKR
-                type = annex_everything
-            }
-        }
-		LNR = {
-            declare_war_on = {
-                target = UKR
-                type = annex_everything
-            }
-        }
-		CHE = {
-            declare_war_on = {
-                target = UKR
-                type = annex_everything
-            }
-        }
-
-        POL = {
-            complete_national_focus = POL_we_are_with_you
-        }
-
     }
 }
 
@@ -596,6 +601,239 @@ country_event = {
 			country_event = {
 				id = ukr.24
 				days = 0
+			}
+		}
+    }
+}
+
+#Премьера фильма «Лучшие в аду»
+country_event = { 
+    id = smo.12
+    title = smo.12.t
+	desc = smo.12.d
+
+	picture = GFX_country_event_063
+	is_triggered_only = yes
+
+	option = {
+		name = smo.12.a
+		add_political_power = 50
+		add_stability = 0.03
+		add_war_support = 0.05
+	}
+}
+
+#First Negotiations
+country_event = { 
+    id = negotiations.1
+    title = negotiations.1.t
+	desc = negotiations.1.d
+
+	picture = GFX_country_event_114
+	is_triggered_only = yes
+
+	option = {
+		name = negotiations.1.a
+        
+	}
+}
+country_event = { 
+    id = negotiations.2
+    title = negotiations.2.t
+	desc = negotiations.2.d
+
+	picture = GFX_country_event_115
+	is_triggered_only = yes
+
+	option = {
+		name = negotiations.2.a
+        
+	}
+}
+country_event = { 
+    id = negotiations.3
+    title = negotiations.3.t
+	desc = negotiations.3.d
+
+	picture = GFX_country_event_116
+	is_triggered_only = yes
+
+	option = {
+		name = negotiations.3.a
+        
+	}
+}
+#Днюхааааа
+country_event = { 
+    id = smo.19
+    title = smo.19.t
+	desc = smo.19.d
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		country_event = {
+			id = smo.19
+			days = 365
+		}
+	}
+
+	option = {
+		name = smo.19.a
+		if = {
+		    limit = {
+				tag = RUS
+				vladimir_putin = is_country_leader
+			}
+			vladimir_putin = {
+				unit_leader_event = putin_mission.7
+			}
+			add_to_variable = {
+				var = global.putins_age
+				value = 1
+			}
+		}
+		if = {
+		    limit = {
+				tag = UKR
+				volodymir_zelenskyy = is_country_leader
+			}
+			volodymir_zelenskyy = {
+				unit_leader_event = ukr_unit_leader_event.1
+			}
+			add_to_variable = {
+				var = global.zelenskiy_age
+				value = 1
+			}
+		}
+	}
+}
+
+#Новый год
+country_event = { 
+    id = smo.20
+    title = smo.20.t
+	desc = smo.20.d
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = smo.20.a
+		if = {
+		    limit = {
+				tag = RUS
+				vladimir_putin = is_country_leader
+				has_war_with = UKR
+			}
+			country_event = {
+				id = rus.119
+				days = 0
+			}
+		}
+		if = {
+		    limit = {
+				tag = UKR
+				volodymir_zelenskyy = is_country_leader
+				has_war_with = RUS
+			}
+			country_event = {
+				id = ukr.56
+				days = 0
+			}
+		}
+	}
+}
+
+unit_leader_event = { 
+    id = smo.21 #smo.13
+    title = smo.21.t
+	desc = smo.21.d
+	is_triggered_only = yes
+
+	option = {
+		name = smo.21.a
+        retire = yes
+    } 
+}
+
+unit_leader_event = {
+    id = smo.22 #smo.14
+    title = smo.22.t
+	desc = smo.22.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = smo.22.a
+        random_list = {
+        25 = {
+        add_timed_unit_leader_trait = {
+            trait = wounded
+            days = 30
+            }
+        }
+        25 = {
+         add_timed_unit_leader_trait = {
+            trait = wounded
+            days = 45
+            }
+        }
+        25 = {
+        add_timed_unit_leader_trait = {
+        trait = wounded
+        days = 60
+        }
+        }
+        25 = {
+        add_timed_unit_leader_trait = {
+        trait = wounded
+        days = 80
+        }
+        }
+       } 
+    }
+}
+
+country_event = { 
+    id = smo.23 #smo.15
+    title = smo.23.t
+	desc = smo.23.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = smo.23.a
+    }
+}
+
+country_event = { 
+    id = smo.24
+    title = smo.24.t
+	desc = smo.24.d
+	picture = GFX_country_event_124
+	is_triggered_only = yes
+
+	option = {
+		name = smo.24.a
+		add_political_power = 65
+		add_stability = 0.025
+		add_war_support = 0.05
+		if = {
+			limit = {
+				TAG = RUS
+			}
+			add_to_variable = {	
+				var = global.rus_information_war_var_sum
+				value = 5
+				tooltip = IW_5_var_add_tt
+			}
+			hidden_effect={
+				add_to_variable = {	
+					var = global.ukr_information_war_var_sum
+					value = -5
+				}
 			}
 		}
     }

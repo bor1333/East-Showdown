@@ -124,6 +124,54 @@ unit_medals = {
 			add_divisional_commander_xp = 350
 		}
 	}
+	participant_SVO = {
+
+		
+		available = { should_have_rus_medals_trigger = yes has_completed_focus = RUS_Heroes_Z }
+		frame = 5
+		icon = "GFX_medal_icon_rus"
+		
+		cost = 40
+		
+		unit_modifiers = {
+			army_attack_factor = 0.05
+			army_strength_factor = 0.1
+			max_dig_in_factor = 0.05
+			experience_loss_factor = -0.15
+		}
+		
+		#leader_modifier = {
+		# transport_capacity = whatever
+		#}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 400
+		}
+	}
+	volunteer_SVO = {
+
+		
+		available = { should_have_rus_medals_trigger = yes has_completed_focus = RUS_Heroes_Z }
+		frame = 6
+		icon = "GFX_medal_icon_rus"
+		
+		cost = 35
+		
+		unit_modifiers = {
+			max_dig_in_factor = 0.045
+			army_org_factor = 0.05
+			supply_consumption_factor = -0.075
+			army_morale_factor = 0.1
+		}
+		
+		#leader_modifier = {
+		# transport_capacity = whatever
+		#}
+		
+		one_time_effect = {
+			add_divisional_commander_xp = 390
+		}
+	}
 	
 	hero_ukr = {
 		available = { should_have_ukr_medals_trigger = yes }
@@ -213,10 +261,10 @@ unit_medals = {
 		
 	}
 	
-	hero_dnr = {
-		available = { should_have_dnr_medals_trigger = yes }
+	hero_DPR = {
+		available = { should_have_DPR_medals_trigger = yes }
 		frame = 1
-		icon = "GFX_medal_icon_dnr"
+		icon = "GFX_medal_icon_DPR"
 		
 		cost = 15
 		
@@ -235,10 +283,10 @@ unit_medals = {
 		
 	}
 	
-	services_dnr = {
-		available = { should_have_dnr_medals_trigger = yes }
+	services_DPR = {
+		available = { should_have_DPR_medals_trigger = yes }
 		frame = 2
-		icon = "GFX_medal_icon_dnr"
+		icon = "GFX_medal_icon_DPR"
 		
 		cost = 20
 		
@@ -258,9 +306,9 @@ unit_medals = {
 	}
 	
 	order_nicholas_wonderworker = {
-		available = { should_have_dnr_medals_trigger = yes }
+		available = { should_have_DPR_medals_trigger = yes }
 		frame = 3
-		icon = "GFX_medal_icon_dnr"
+		icon = "GFX_medal_icon_DPR"
 		
 		cost = 20
 		
@@ -280,9 +328,9 @@ unit_medals = {
 	}
 	
 	order_republic = {
-		available = { should_have_dnr_medals_trigger = yes }
+		available = { should_have_DPR_medals_trigger = yes }
 		frame = 4
-		icon = "GFX_medal_icon_dnr"
+		icon = "GFX_medal_icon_DPR"
 		
 		cost = 35
 		
@@ -303,10 +351,10 @@ unit_medals = {
 		
 	}
 	
-	hero_lnr = {
-		available = { should_have_lnr_medals_trigger = yes }
+	hero_LPR = {
+		available = { should_have_LPR_medals_trigger = yes }
 		frame = 1
-		icon = "GFX_medal_icon_lnr"
+		icon = "GFX_medal_icon_LPR"
 		
 		cost = 15
 		
@@ -326,9 +374,9 @@ unit_medals = {
 	}
 	
 	service_bravery = {
-		available = { should_have_lnr_medals_trigger = yes }
+		available = { should_have_LPR_medals_trigger = yes }
 		frame = 2
-		icon = "GFX_medal_icon_lnr"
+		icon = "GFX_medal_icon_LPR"
 		
 		cost = 20
 		
@@ -348,9 +396,9 @@ unit_medals = {
 	}
 	
 	loyalty_duty = {
-		available = { should_have_lnr_medals_trigger = yes }
+		available = { should_have_LPR_medals_trigger = yes }
 		frame = 3
-		icon = "GFX_medal_icon_lnr"
+		icon = "GFX_medal_icon_LPR"
 		
 		cost = 20
 		
@@ -370,9 +418,9 @@ unit_medals = {
 	}
 	
 	bravery = {
-		available = { should_have_lnr_medals_trigger = yes }
+		available = { should_have_LPR_medals_trigger = yes }
 		frame = 4
-		icon = "GFX_medal_icon_lnr"
+		icon = "GFX_medal_icon_LPR"
 		
 		cost = 35
 		

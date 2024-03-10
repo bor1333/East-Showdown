@@ -531,12 +531,9 @@ soundeffect = {
 soundeffect = {
 	name = railway_gun_move
 	sounds = {
-		sound = train_horn_veryLarge-001
-		sound = train_horn_veryLarge-002
-		sound = train_horn_veryLarge-003
-		sound = train_horn_veryLarge-004
+		sound = semensound
 	}
-	volume = 0.5
+	volume = 0.0
 }
 
 ####GEN_RAILGUN###
@@ -610,12 +607,9 @@ soundeffect =
 {
 	name = select_railway_gun
 	sounds = {
-		sound = train_horn_veryLarge-005
-		sound = train_horn_veryLarge-006
-		sound = train_horn_veryLarge-007
-		sound = train_horn_veryLarge-008
+		sound = semensound
 	}
-	volume = 0.4
+	volume = 0.0
 }
 soundeffect =
 {
@@ -2702,20 +2696,28 @@ soundeffect =
 	max_audible = 1
 	max_audible_behaviour = fail
 }
+soundeffect =
+{
+	name = "alert_industrial_org_sizeup_sound"
+	volume = 0.35
+	sounds = {
+		sound = ui_mio_alert_01
+		sound = ui_mio_alert_02
+		sound = ui_mio_alert_03
+	}
+	max_audible = 1
+	max_audible_behaviour = fail
+}
 
 
 #### GEN_TRAIN ###
 soundeffect = {
 	name = GEN_train_equipment_1
 	falloff = "falloff_trains_medium"
-	loop = yes
+	loop = no
 	random_sound_when_looping = no
 	sounds = {
-		sound = GEN_train_equipment_1_01
-		sound = GEN_train_equipment_1_02
-		sound = GEN_train_equipment_1_03
-		sound = GEN_train_equipment_1_04
-		sound = GEN_train_equipment_1_05
+		sound = semensound
 	}
 	max_audible = 3
 	max_audible_behaviour = fail
@@ -2723,20 +2725,15 @@ soundeffect = {
 	is3d = yes
 	fade_in = 0.20
 	fade_out = 0.40
-	volume = 0.70
+	volume = 0.0
 }
-
 soundeffect = {
 	name = GEN_train_equipment_2
 	falloff = "falloff_trains_medium"
-	loop = yes
+	loop = no
 	random_sound_when_looping = no
 	sounds = {
-		sound = GEN_train_equipment_2_01
-		sound = GEN_train_equipment_2_02
-		sound = GEN_train_equipment_2_03
-		sound = GEN_train_equipment_2_04
-		sound = GEN_train_equipment_2_05
+		sound = semensound
 	}
 	max_audible = 3
 	max_audible_behaviour = fail
@@ -2744,20 +2741,16 @@ soundeffect = {
 	is3d = yes
 	fade_in = 0.20
 	fade_out = 0.40
-	volume = 0.70
+	volume = 0.0
 }
 
 soundeffect = {
 	name = GEN_train_equipment_3
 	falloff = "falloff_trains_medium"
-	loop = yes
+	loop = no
 	random_sound_when_looping = no
 	sounds = {
-		sound = GEN_train_equipment_3_01
-		sound = GEN_train_equipment_3_02
-		sound = GEN_train_equipment_3_03
-		sound = GEN_train_equipment_3_04
-		sound = GEN_train_equipment_3_05
+		sound = semensound
 	}
 	max_audible = 3
 	max_audible_behaviour = fail
@@ -2765,58 +2758,37 @@ soundeffect = {
 	is3d = yes
 	fade_in = 0.20
 	fade_out = 0.40
-	volume = 0.70
+	volume = 0.0
 }
 
 #### HORNS #####
 soundeffect = {
 	name =  train_horn_medium
 	falloff = "falloff_trains_medium"
-	loop = yes
-	prevent_random_repetition = no	
+	loop = no
+	prevent_random_repetition = no
 	sounds = {
-		weighted_sound = { sound = train_horn_medium-001  weight = 2 }
-		weighted_sound = { sound = train_horn_medium-002 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-003 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-004 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-005 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-006 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-007 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-008 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-009 weight = 2 }
-		weighted_sound = { sound = train_horn_medium-010 weight = 2 }
-		weighted_sound = { sound = silence_buffer_1s weight = 42 }
+		sound = semensound
 	}
 	max_audible = 2
 	max_audible_behaviour = fail
 	playbackrate_random_offset = { -5.0 5.0 }
 	is3d = yes
-	volume = 0.5
+	volume = 0.0
 }
 
 soundeffect = {
 	name = train_horn_veryLarge
 	falloff = "falloff_trains_medium"
-	loop = yes
+	loop = no
 	sounds = {
-		weighted_sound = { sound = train_horn_veryLarge-001  weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-002 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-003 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-004 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-005 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-006 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-007 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-008 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-009 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-010 weight = 2 }
-		weighted_sound = { sound = train_horn_veryLarge-011 weight = 2 }
-		weighted_sound = { sound = silence_buffer_1s weight = 45 }
+		sound = semensound
 	}
 	max_audible = 2
 	max_audible_behaviour = fail
 	playbackrate_random_offset = { -5.0 5.0 }
 	is3d = yes
-	volume = 0.5
+	volume = 0.0
 }
 
 ####GEN_FLOATING_HARBOUR####

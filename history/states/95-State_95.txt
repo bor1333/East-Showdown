@@ -5,12 +5,16 @@ state = {
 
 	state_category = large_town
 
+	provinces = {
+		508 1420 2193 3313 8423 8552 8637 10222 10231 18205 18208 18209 18210 18211 19517 19521 19522 19523 
+	}
+
 	history = {
 		owner = UKR
 		
-		victory_points = { 8637 119 }
-		victory_points = { 18209 116 }
-		victory_points = { 18211 123 }
+		victory_points = { 8637 15 }
+		victory_points = { 18209 15 }
+		victory_points = { 18211 15 }
 		
 		buildings = {
 			infrastructure = 4
@@ -19,10 +23,6 @@ state = {
 		}
 		
 		add_core_of = UKR
-	}
-
-	provinces = {
-		508 1420 2193 3313 8423 8552 8637 10222 10231 18205 18208 18209 18210 18211 
 	}
 
 	buildings_max_level_factor = 0.7

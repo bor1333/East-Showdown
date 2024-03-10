@@ -5,6 +5,10 @@ state = {
 
 	state_category = city
 
+	provinces = {
+		186 744 1228 2482 4147 4378 4851 5246 6026 6488 7582 9131 9477 9743 10344 11115 11537 11780 12141 12831 14076 14140 15430 15453 15454 15517 15542 16691 16736 16744 16751 16789 16822 16848 16867 17593 18084 
+	}
+
 	resources = {
 		oil = 14
 		chromium = 9
@@ -13,17 +17,15 @@ state = {
 	history = {
 		owner = RUS
 		
-		victory_points = { 1228 2 }
-		victory_points = { 4378 8 }
-		victory_points = { 5246 3 }
-		victory_points = { 9131 3 }
-		victory_points = { 9477 4 }
-		victory_points = { 11115 3 }
-		victory_points = { 12831 3 }
-		victory_points = { 15542 3 }
-		victory_points = { 16736 4 }
-		victory_points = { 16848 1 }
-		victory_points = { 16867 1 }
+		victory_points = { 1228 5 }
+		victory_points = { 5246 5 }
+		victory_points = { 6026 5 }
+		victory_points = { 9131 10 }
+		victory_points = { 9477 15 }
+		victory_points = { 11115 5 }
+		victory_points = { 15453 5 }
+		victory_points = { 16736 15 }
+		victory_points = { 16848 5 }
 		
 		buildings = {
 			infrastructure = 3
@@ -38,10 +40,6 @@ state = {
 		
 		add_core_of = RUS
 		add_claim_by = UKR
-	}
-
-	provinces = {
-		186 744 1228 2482 4147 4378 4851 5246 6026 6488 7582 9131 9477 9743 10344 11115 11537 11780 12141 12831 14076 14140 15430 15453 15454 15517 15542 16691 16736 16744 16751 16789 16822 16848 16867 17593 18084 
 	}
 
 }

@@ -35,10 +35,49 @@ spriteTypes = {
 
 	SpriteType = { 
 		name = "GFX_ideology_POL_democratic_group"
-		texturefile = "gfx/interface/ideologies/liberalism_progressive_liberalism_subtype.dds"
+		texturefile = "gfx/interface/ideologies/poland.dds"
 	}
 
 	
+	SpriteType = { 
+		name = "GFX_ideology_SLO_democratic_group"
+		texturefile = "gfx/interface/ideologies/slovakia.dds"
+	}
+	
+	SpriteType = { 
+		name = "GFX_ideology_HUN_democratic_group"
+		texturefile = "gfx/interface/ideologies/hungary.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_ideology_SER_democratic_group"
+		texturefile = "gfx/interface/ideologies/serbia.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_ideology_ROM_democratic_group"
+		texturefile = "gfx/interface/ideologies/rom.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_ideology_ROM_democratic_group"
+		texturefile = "gfx/interface/ideologies/rom.dds"
+	}
+	SpriteType = { 
+		name = "GFX_ideology_BOS_democratic_group"
+		texturefile = "gfx/interface/ideologies/bosnia.dds"
+	}
+
+
+	SpriteType = { 
+		name = "GFX_ideology_BOL_democratic_group"
+		texturefile = "gfx/interface/ideologies/bolgaria.dds"
+	}
+
+
+
+
+
 
 	SpriteType = { 
 		name = "GFX_ideology_CHE_neutrality_group"
@@ -51,12 +90,12 @@ spriteTypes = {
 	}
 
 	SpriteType = { 
-		name = "GFX_ideology_DNR_neutrality_group"
+		name = "GFX_ideology_DPR_neutrality_group"
 		texturefile = "gfx/interface/ideologies/despotism_group.dds"
 	}
 
 	SpriteType = { 
-		name = "GFX_ideology_LNR_neutrality_group"
+		name = "GFX_ideology_LPR_neutrality_group"
 		texturefile = "gfx/interface/ideologies/despotism_group.dds"
 	}
 
@@ -70,7 +109,7 @@ SpriteType = {
 #############################
 spriteType = {
 		name = "GFX_ideology_NTO_democratic_group"
-		texturefile = "gfx/interface/ideologies/liberalism_classical_liberalism_subtype.dds"
+		texturefile = "gfx/interface/ideologies/NATO.dds"
 	}
 	
 
@@ -81,27 +120,27 @@ SpriteType = {
 		texturefile = "gfx/interface/ideologies/despotism_absolute_monarchy_subtype.dds"
 	}
 	spriteType = {
-		name = "GFX_ideology_DNR_neutrality_group"
-		texturefile = "gfx/interface/ideologies/dnr.dds"
+		name = "GFX_ideology_DPR_neutrality_group"
+		texturefile = "gfx/interface/ideologies/DPR.dds"
 	}
 
 spriteType = {
-		name = "GFX_ideology_DNR_fascism_group"
-		texturefile = "gfx/interface/ideologies/dnr.dds"
+		name = "GFX_ideology_DPR_fascism_group"
+		texturefile = "gfx/interface/ideologies/DPR.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ideology_LNR_fascism_group"
-		texturefile = "gfx/interface/ideologies/lnr.dds"
+		name = "GFX_ideology_LPR_fascism_group"
+		texturefile = "gfx/interface/ideologies/LPR.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ideology_WGN_fascism_group"
+		name = "GFX_ideology_WGN_wgn"
 		texturefile = "gfx/interface/ideologies/wagner_fascism.dds"
 	}
 
 	spriteType = {
-		name = "GFX_ideology_WGN_new_fascism_group"
+		name = "GFX_ideology_WGN_wgn_new"
 		texturefile = "gfx/interface/ideologies/wagner_new_fascism.dds"
 	}
 

@@ -3,66 +3,37 @@ set_air_oob = "RUS_2022_air"
 
 capital = 14
 set_research_slots = 4
-set_stability = 0.45
+set_stability = 0.35
 set_war_support = 0.5
 set_convoys = 250
+
+create_intelligence_agency = yes
+
 if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
+	limit = { has_dlc = "Together for Victory" }
 	set_autonomy = {
 		target = CHE
-		autonomous_state = autonomy_integrated_federal_subject
+		autonomous_state = autonomy_federal_subject
 	}
 	set_autonomy = {
-		target = DNR
-		autonomous_state = autonomy_integrated_puppet
+		target = DPR
+		autonomous_state = autonomy_puppet_of_russia
 	}
 	set_autonomy = {
-		target = LNR
-		autonomous_state = autonomy_integrated_puppet
+		target = LPR
+		autonomous_state = autonomy_puppet_of_russia
 	}
 	else = {
 		puppet = CHE
-		puppet = DNR
-		puppet = LNR
+		puppet = DPR
+		puppet = LPR
 	}
 }
-
-DNR = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = "2019.04.21"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 5
-		fascism = 65
-		communism = 13
-		neutrality = 17
-	}
-}
-
-LNR = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = "2019.04.21"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 10
-		fascism = 75
-		communism = 10
-		neutrality = 5
-	}
-}
-
 		
+set_variable = {
+	var = ally_state_inf
+	value = 50
+}
 
 create_equipment_variant = {
 	name = "\"Выстрел\" с \"Корд\""
@@ -597,14 +568,13 @@ create_equipment_variant = {
 		armor_type_slot = tank_armor_m_1
 		electronic_type_slot = tank_elec_2
 		cyo_type_slot = tank_cyo_t_1a
-		special_type_slot_1 = tank_kz_1
-		special_type_slot_2 = tank_o_rel_1
+		special_type_slot_3 = tank_o_rel_1
+		special_type_slot_2 = tank_kz_1
 	}
 	upgrades = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	obsolete = yes
 	icon = "GFX_bmp2_AAB"
 }
 create_equipment_variant = {
@@ -645,18 +615,15 @@ create_equipment_variant = {
 		turret_type_slot = tank_mturret_2
 		gruz_type_slot = tank_desant_2
 		armor_type_slot = tank_armor_m_1
-		additional_armor_type_slot = tank_armor_dop_1
 		electronic_type_slot = tank_elec_2
 		cyo_type_slot = tank_cyo_t_1a
-		special_type_slot_1 = tank_kz_1
-		special_type_slot_2 = tank_o_rel_1
-		special_type_slot_3 = tank_armor_mina_1
+		special_type_slot_3 = tank_armor_dop_1
+		special_type_slot_2 = tank_kz_1
 	}
 	upgrades = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	obsolete = yes
 	icon = "GFX_bmp2_AAC"
 }
 create_equipment_variant = {
@@ -720,14 +687,13 @@ create_equipment_variant = {
 		armor_type_slot = tank_armor_m_1
 		electronic_type_slot = tank_elec_2
 		cyo_type_slot = tank_cyo_t_2
-		special_type_slot_3 = tank_kz_2
-		special_type_slot_2 = tank_o_rel_1
+		special_type_slot_3 = tank_armor_dop_2_f
+		special_type_slot_2 = tank_kz_2
 	}
 	upgrades = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	obsolete = yes
 	icon = "GFX_bmp3_AAB"
 }
 create_equipment_variant = {
@@ -752,7 +718,6 @@ create_equipment_variant = {
 		tank_nsb_engine_upgrade = 0
 		tank_nsb_armor_upgrade = 0
 	}
-	obsolete = yes
 	icon = "GFX_bmp3_AAB"
 }
 create_equipment_variant = {
@@ -1856,9 +1821,10 @@ set_technology = {
 }
 
 add_ideas = {
-	limited_conscription
+	volunteer_only
 	civilian_economy
 	state_of_stability
+	high_corruption_level
 	weak_ideology
 	economic_stagnation
 	strength_of_opposition_1
@@ -1867,6 +1833,7 @@ add_ideas = {
 	RUS_Siberia
     RUS_t14
     RUS_elektronik
+	RUS_gas_sales_to_Europe
 }
 
 
@@ -1875,8 +1842,8 @@ add_to_faction = CHE
 add_to_faction = BLR
 add_to_faction = KAZ
 add_to_faction = WGN
-remove_from_faction = LNR
-remove_from_faction = DNR
+remove_from_faction = LPR
+remove_from_faction = DPR
 
 #Politics for 2022.1.1
 set_politics = {
@@ -1901,25 +1868,37 @@ add_named_threat = {
 #Yedinaya Rossiya
 recruit_character = vladimir_putin
 recruit_character = mikhail_mishustin
+activate_advisor = RUS_mikhail_mishustin
 recruit_character = dmitry_medvedev
 recruit_character = dmitry_peskov
 recruit_character = andrey_belousov
+activate_advisor = RUS_andrey_belousov
 recruit_character = sergei_lavrov
+activate_advisor = RUS_sergei_lavrov
 recruit_character = viacheslav_volodin
 recruit_character = alexey_overchuk
 recruit_character = anton_siluanov
 recruit_character = maxim_reshetnikov
+activate_advisor = RUS_maxim_reshetnikov
 recruit_character = tatyana_golikova
 recruit_character = marat_khusnullin
 recruit_character = dmitry_rogozin
 recruit_character = yuri_borisov
 recruit_character = konstantin_chuichenko
+activate_advisor = RUS_konstantin_chuichenko
 recruit_character = denis_manturov
+activate_advisor = RUS_denis_manturov
 recruit_character = sergey_kravtsov
 recruit_character = vladimir_solovyov
 recruit_character = dmitry_kiselyov
 recruit_character = igor_konashenkov
-
+recruit_character = alexander_bortnikov
+recruit_character = patriarch_kirill
+recruit_character = vladimir_kolokoltsev
+recruit_character = evgeny_burdinsky
+recruit_character = vladimir_alekseev
+recruit_character = vitaly_kuznetsov
+recruit_character = viktor_zolotov
 #Rodina
 recruit_character = alexey_zhuravlev
 
@@ -1954,12 +1933,10 @@ recruit_character = andrei_saveliev
 recruit_character = alexander_barkashov
 
 #Military
-recruit_character = viktor_samsonov
-recruit_character = yuri_baluyevsky
-recruit_character = nikolai_makarov
 recruit_character = valery_gerasimov
-recruit_character = vladimir_semyonov
+activate_advisor = RUS_valery_gerasimov
 recruit_character = anatoly_kornukov
+recruit_character = sergey_kisel
 recruit_character = vladimir_mikhaylov
 recruit_character = alexander_zelin
 recruit_character = vladimir_kuroyedov
@@ -1967,7 +1944,9 @@ recruit_character = vladimir_masorin
 recruit_character = vladimir_vysotsky
 recruit_character = pavel_popov
 recruit_character = sergei_shoigy
+activate_advisor = RUS_sergei_shoigy
 recruit_character = sergei_syrovikin
+activate_advisor = VKS_sergei_syrovikin
 recruit_character = yuriy_sadovenko
 recruit_character = igor_borisovich_tymofeyev
 recruit_character = vadym_ivanovych_pankov
@@ -1980,13 +1959,21 @@ recruit_character = oleg_salyukov
 recruit_character = alexander_lapin
 recruit_character = vladimir_korolev
 recruit_character = aleksandr_viktorovich_vitko
-recruit_character = nikolay_yevmenov
 recruit_character = sergei_avakyants
 recruit_character = viktor_nikolayevich_mardusin
 recruit_character = alexander_nosatov
 recruit_character = viktor_petrovich_kravchuk
 recruit_character = michael_teplinsky
-
+recruit_character = aleksandr_dvornikov
+recruit_character = mihail_zucko
+recruit_character = mihail_ugalev
+recruit_character = evgeniy_nikiforov
+recruit_character = rustam_muradov
+recruit_character = andrey_mordvichev
+recruit_character = sergey_kuzolev
+recruit_character = victor_afzalov
+recruit_character = nikolay_evmenov
+activate_advisor = VMF_nikolay_evmenov
 
 
 add_equipment_production = {
@@ -2589,13 +2576,13 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = medium_sau_chassis_0
 	variant_name = "2С1"
-	amount = 800
+	amount = 3500
 	producer = RUS
 } 
 add_equipment_to_stockpile = {
 	type = medium_sau_chassis_0
 	variant_name = "МСТА-С"
-	amount = 500
+	amount = 600
 	producer = RUS
 } 
 add_equipment_to_stockpile = {
@@ -2691,31 +2678,31 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = btr1_chassis
 	variant_name = "БТР-70 БМ"
-	amount = 2000
+	amount = 4000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = btr2_chassis
 	variant_name = "БТР-80 БМ"
-	amount = 1000
+	amount = 3000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = btr2_chassis
 	variant_name = "БТР-82А"
-	amount = 700
+	amount = 1200
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = btr3_chassis
 	variant_name = "БТР-К16"
-	amount = 30
+	amount = 50
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = heavy_sau_chassis_0
 	variant_name = "2С7 \"Пион\""
-	amount = 200
+	amount = 400
 	producer = RUS
 }
 add_equipment_to_stockpile = {
@@ -2744,12 +2731,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1	
-	amount = 37500
+	amount = 97000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = train_equipment_1	
-	amount = 3500
+	amount = 4500
 	producer = RUS
 }
 add_equipment_to_stockpile = {
@@ -2799,17 +2786,17 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = engineering_equipment_0	
-	amount = 4000
+	amount = 8000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = ARV_equipment_0	
-	amount = 4000
+	amount = 8000
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = AMV_equipment_0	
-	amount = 5000
+	amount = 9800
 	producer = RUS
 }
 add_equipment_to_stockpile = {
@@ -2823,7 +2810,7 @@ add_equipment_to_stockpile = {
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = hel_strike_equipment_3	
+	type = hel_strike_equipment_mi35m	
 	amount = 30
 	producer = RUS
 }
@@ -2848,58 +2835,58 @@ add_equipment_to_stockpile = {
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_CAS_equipment_1	
+	type = RUS_cas_equipment_su25	
 	amount = 80
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_CAS_equipment_1	
+	type = RUS_cas_equipment_su25	
 	amount = 80
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_CAS_equipment_1	
+	type = RUS_cas_equipment_su25	
 	amount = 50
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_fighter_equipment_2	
+	type = RUS_fighter_equipment_su27	
 	amount = 50
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_strat_bomber_equipment_3	
+	type = RUS_strat_bomber_equipment_tu95msm	
 	amount = 16
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_strat_bomber_equipment_3	
+	type = RUS_strat_bomber_equipment_tu95msm	
 	amount = 16
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = rus_strat_bomber_equipment_3	
+	type = RUS_strat_bomber_equipment_tu95msm	
 	amount = 40
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_0	
-	amount = 250
-	producer = RUS
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1	
-	amount = 800
-	producer = RUS
-}
-add_equipment_to_stockpile = {
-	type = artillery_equipment_2	
 	amount = 700
 	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = artillery_equipment_3	
+	type = artillery_equipment_1	
+	amount = 1500
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_2	
 	amount = 800
+	producer = RUS
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_3	
+	amount = 900
 	producer = RUS
 }
 add_equipment_to_stockpile = {
@@ -2914,17 +2901,17 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = atgm_1_eq	
-	amount = 1200
+	amount = 3200
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = atgm_2_eq	
-	amount = 600
+	amount = 1600
 	producer = RUS
 }
 add_equipment_to_stockpile = {
 	type = atgm_3_eq	
-	amount = 1250
+	amount = 1850
 	producer = RUS
 }
 

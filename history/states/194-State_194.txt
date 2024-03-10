@@ -5,12 +5,16 @@ state = {
 
 	state_category = large_town
 
+	provinces = {
+		342 1015 2643 3309 3770 7178 7673 7697 8016 8895 9332 9881 10453 12016 12917 15127 15875 18716 18725 18726 18727 18728 
+	}
+
 	resources = {
 		aluminium = 30
 	}
 
 	history = {
-		owner = LNR
+		owner = LPR
 		
 		victory_points = { 342 4 }
 		victory_points = { 1015 15 }
@@ -31,12 +35,8 @@ state = {
 			ammunition_plant = 1
 		}
 		
-		add_core_of = LNR
+		add_core_of = LPR
 		add_claim_by = UKR
-	}
-
-	provinces = {
-		342 1015 2643 3309 3770 7178 7673 7697 8016 8895 9332 9881 10453 12016 12917 15127 15875 18716 18725 18726 18727 18728 
 	}
 
 }

@@ -5,12 +5,16 @@ state = {
 
 	state_category = town
 
+	provinces = {
+		405 1929 4854 7381 8025 16026 
+	}
+
 	resources = {
 		steel = 12
 	}
 
 	history = {
-		owner = PDR
+		owner = PMR
 		
 		victory_points = { 405 2 }
 		victory_points = { 1929 2 }
@@ -26,12 +30,8 @@ state = {
 			ammunition_silo = 4
 		}
 		
-		add_core_of = PDR
+		add_core_of = PMR
 		add_claim_by = MOL
-	}
-
-	provinces = {
-		405 1929 4854 7381 8025 16026 
 	}
 
 }

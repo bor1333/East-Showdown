@@ -5,6 +5,12 @@ on_actions = {
 			every_country = {
 				add_to_variable = { ammunition_variable = 10000 }
 			}
+			UKR = {
+				set_variable = { ammunition_variable = 5200 }
+			}
+			RUS = {
+				set_variable = { ammunition_variable = 7800 }
+			}
 		}
 	}
 
@@ -171,7 +177,8 @@ on_actions = {
 
 			################## end daily consumption
 
-
+			set_variable = { ammunition_plants = modifier@ammunition_plants }
+			set_variable = { ammunition_silos = modifier@ammunition_silos }
 
 
 			#### daily addition
