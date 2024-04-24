@@ -1522,7 +1522,12 @@ spriteType = {
 
 spriteType = {
 	name = "GFX_idea_UKR_Kropiva"
-	texturefile = "gfx/interface/ideas/UKR/teach_centr.dds"
+	texturefile = "gfx/interface/ideas/UKR/kropiva.dds"
+}
+
+spriteType = {
+	name = "GFX_idea_UKR_increased_ammunition_production"
+	texturefile = "gfx/interface/ideas/UKR/increased_ammunition_production.dds"
 }
 
 
@@ -1699,7 +1704,7 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_UKR_Ukraines_ground_forces"
+		name = "GFX_UKR_Ukraines_ground_forces"
 		texturefile = "gfx/interface/ideas/UKR/Groud_ukr1.dds"
 	}
 
@@ -1784,8 +1789,26 @@ spriteType = {
 		name = "GFX_UKR_nato_instructors"
 		texturefile = "gfx/interface/ideas/UKR/nato_instructors.dds"
 	}
-	
-
+    spriteType = {
+		name = "GFX_idea_UKR_Russophile_opposition"
+		texturefile = "gfx/interface/ideas/UKR/UKR_Russophile_opposition.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_Inspired_brigades_i"
+		texturefile = "gfx/interface/ideas/UKR/UKR_Inspired_brigades_i.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_war_volunteers"
+		texturefile = "gfx/interface/ideas/UKR/UKR_war_volunteers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_mass_looting_1"
+		texturefile = "gfx/interface/ideas/UKR/UKR_mass_looting.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_mass_looting_2"
+		texturefile = "gfx/interface/ideas/UKR/UKR_mass_looting.dds"
+	}
 
 #####################################################
 spriteType = {
@@ -2465,6 +2488,10 @@ spriteType = {
 		texturefile = "gfx/interface/ideas/RUS/RUS_disruption_of_the_operation.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_RUS_disruption_of_the_operation_2"
+		texturefile = "gfx/interface/ideas/RUS/RUS_disruption_of_the_operation.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_UKR_port_blockade"
 		texturefile = "gfx/interface/ideas/UKR/UKR_port_blockade.dds"
 	}
@@ -2714,4 +2741,40 @@ spriteType = {
 	spriteType = {
 		name = "GFX_idea_UKR_State_of_emergency_idea"
 		texturefile = "gfx/interface/ideas/UKR/UKR_State_of_emergency_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_planned_defense"
+		texturefile = "gfx/interface/ideas/UKR/UKR_planned_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_censorship"
+		texturefile = "gfx/interface/ideas/UKR/UKR_censorship.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_free_media"
+		texturefile = "gfx/interface/ideas/UKR/UKR_free_media.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_internal_refugees"
+		texturefile = "gfx/interface/ideas/UKR/UKR_internal_refugees.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_escape_from_mobilization"
+		texturefile = "gfx/interface/ideas/UKR/UKR_escape_from_mobilization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_Satellite"
+		texturefile = "gfx/interface/ideas/UKR/UKR_Satellite.dds"
+	}
+	spriteType = {
+		name = "GFX_UKR_economy_status"
+		texturefile = "gfx/interface/ideas/UKR/UKR_economy_status.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_subsidies_for_affected_companies_idea"
+		texturefile = "gfx/interface/ideas/UKR/UKR_economy_status.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_Construction_of_new_factories_in_the_rear_idea"
+		texturefile = "gfx/interface/ideas/UKR/UKR_economy_status.dds"
 	}
