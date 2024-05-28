@@ -1,3 +1,4 @@
+### MPR
 equipment_modules = {
 	limit = {
 		has_dlc = "No Step Back" 
@@ -10,9 +11,9 @@ equipment_modules = {
 		category = tank_dop_guns
 
 		add_stats = {
-			soft_attack = 6
-			hard_attack = 1
-			breakthrough = 0.5
+			soft_attack = 3.00 #was 6.0 reduced by 50%
+			hard_attack = 0.50 #was 1.0 reduced by 50%
+			breakthrough = 0.38 #was 0.5 reduced by 25%
 			defense = 0.1
 			build_cost_ic = 0.5
 		}
@@ -26,9 +27,9 @@ equipment_modules = {
 		category = tank_dop_guns
 
 		add_stats = {
-			soft_attack = 2
-			hard_attack = 2
-			breakthrough = 0.4
+			soft_attack = 1.00 #was 2.0 reduced by 50%
+			hard_attack = 1.00 #was 2.0 reduced by 50%
+			breakthrough = 0.30 #was 0.4 reduced by 25%
 			defense = 0.1
 			air_attack = 0.5
 			build_cost_ic = 0.5
@@ -43,10 +44,10 @@ equipment_modules = {
 		category = tank_dop_guns
 
 		add_stats = {
-			soft_attack = 5
-			hard_attack = 3
+			soft_attack = 2.50 #was 5.0 reduced by 50%
+			hard_attack = 1.50 #was 3.0 reduced by 50%
 			ap_attack = 10
-			breakthrough = 0.8
+			breakthrough = 0.60 #was 0.8 reduced by 25%
 			defense = 0.3
 			air_attack = 0.8
 			build_cost_ic = 1
@@ -61,10 +62,10 @@ equipment_modules = {
 		category = tank_dop_guns
 
 		add_stats = {
-			soft_attack = 9
-			hard_attack = 7
+			soft_attack = 4.50 #was 9.0 reduced by 50%
+			hard_attack = 3.50 #was 7.0 reduced by 50%
 			ap_attack = 17
-			breakthrough = 1.5
+			breakthrough = 1.12 #was 1.5 reduced by 25%
 			defense = 0.6
 			air_attack = 1.7
 			build_cost_ic = 1.4
@@ -82,10 +83,10 @@ equipment_modules = {
 		category = tank_dopA_guns
 
 		add_stats = {
-			soft_attack = 13
-			hard_attack = 13
+			soft_attack = 6.50 #was 13.0 reduced by 50%
+			hard_attack = 6.50 #was 13.0 reduced by 50%
 			ap_attack = 27
-			breakthrough = 2
+			breakthrough = 1.50 #was 2.0 reduced by 25%
 			defense = 1
 			air_attack = 5
 			build_cost_ic = 3
@@ -156,9 +157,9 @@ equipment_modules = {
 		category = tank_light_guns
 
 		add_stats = {
-			soft_attack = 2
-			hard_attack = 2
-			breakthrough = 0.4
+			soft_attack = 1.00 #was 2.0 reduced by 50%
+			hard_attack = 1.00 #was 2.0 reduced by 50%
+			breakthrough = 0.30 #was 0.4 reduced by 25%
 			defense = 0.1
 			air_attack = 0.5
 			build_cost_ic = 0.5
@@ -173,10 +174,10 @@ equipment_modules = {
 		category = tank_light_guns
 
 		add_stats = {
-			soft_attack = 5
-			hard_attack = 3
+			soft_attack = 2.50 #was 5.0 reduced by 50%
+			hard_attack = 1.50 #was 3.0 reduced by 50%
 			ap_attack = 10
-			breakthrough = 0.8
+			breakthrough = 0.60 #was 0.8 reduced by 25%
 			defense = 0.3
 			air_attack = 0.8
 			build_cost_ic = 1
@@ -191,10 +192,10 @@ equipment_modules = {
 		category = tank_lightA_guns
 
 		add_stats = {
-			soft_attack = 9
-			hard_attack = 7
+			soft_attack = 4.50 #was 9.0 reduced by 50%
+			hard_attack = 3.50 #was 7.0 reduced by 50%
 			ap_attack = 17
-			breakthrough = 2
+			breakthrough = 1.50 #was 2.0 reduced by 25%
 			defense = 0.6
 			air_attack = 1.7
 			build_cost_ic = 1.4
@@ -213,10 +214,10 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 13
-			hard_attack = 13
+			soft_attack = 6.50 #was 13.0 reduced by 50%
+			hard_attack = 6.50 #was 13.0 reduced by 50%
 			ap_attack = 27
-			breakthrough = 3
+			breakthrough = 2.25 #was 3.0 reduced by 25%
 			defense = 1
 			air_attack = 4
 			build_cost_ic = 3
@@ -235,10 +236,10 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 18
-			hard_attack = 20
+			soft_attack = 9.00 #was 18.0 reduced by 50%
+			hard_attack = 10.00 #was 20.0 reduced by 50%
 			ap_attack = 27
-			breakthrough = 4
+			breakthrough = 3.00 #was 4.0 reduced by 25%
 			defense = 1.5
 			air_attack = 7
 			build_cost_ic = 6
@@ -270,10 +271,10 @@ equipment_modules = {
 		
 
 		add_stats = {
-			soft_attack = 22
-			hard_attack = 27
+			soft_attack = 11.00 #was 22.0 reduced by 50%
+			hard_attack = 13.50 #was 27.0 reduced by 50%
 			ap_attack = 50
-			breakthrough = 3.5
+			breakthrough = 2.62 #was 3.5 reduced by 25%
 			defense = 1.5
 			air_attack = 12
 			build_cost_ic = 6
@@ -291,10 +292,10 @@ equipment_modules = {
 		category = tank_medium_guns
 
 		add_stats = {
-			soft_attack = 12
-			hard_attack = 20
+			soft_attack = 6.00 #was 12.0 reduced by 50%
+			hard_attack = 10.00 #was 20.0 reduced by 50%
 			ap_attack = 35
-			breakthrough = 4
+			breakthrough = 3.00 #was 4.0 reduced by 25%
 			defense = 1
 			air_attack = 1.5
 			build_cost_ic = 3
@@ -318,10 +319,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 15
-			hard_attack = 40
+			soft_attack = 7.50 #was 15.0 reduced by 50%
+			hard_attack = 20.00 #was 40.0 reduced by 50%
 			ap_attack = 60
-			breakthrough = 4.5
+			breakthrough = 3.38 #was 4.5 reduced by 25%
 			defense = 1.9
 			air_attack = 1.5
 			build_cost_ic = 8
@@ -355,10 +356,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 15
-			hard_attack = 45
+			soft_attack = 7.50 #was 15.0 reduced by 50%
+			hard_attack = 22.50 #was 45.0 reduced by 50%
 			ap_attack = 100
-			breakthrough = 5
+			breakthrough = 3.75 #was 5.0 reduced by 25%
 			defense = 2.5
 			air_attack = 1
 			build_cost_ic = 8
@@ -390,10 +391,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 16
-			hard_attack = 20
+			soft_attack = 8.00 #was 16.0 reduced by 50%
+			hard_attack = 10.00 #was 20.0 reduced by 50%
 			ap_attack = 130
-			breakthrough = 6
+			breakthrough = 4.50 #was 6.0 reduced by 25%
 			defense = 3
 			air_attack = 1
 			build_cost_ic = 11
@@ -425,10 +426,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 18
-			hard_attack = 55
+			soft_attack = 9.00 #was 18.0 reduced by 50%
+			hard_attack = 27.50 #was 55.0 reduced by 50%
 			ap_attack = 170
-			breakthrough = 7.5
+			breakthrough = 5.62 #was 7.5 reduced by 25%
 			defense = 3.7
 			air_attack = 1
 			build_cost_ic = 14
@@ -459,10 +460,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 20
-			hard_attack = 65
+			soft_attack = 10.00 #was 20.0 reduced by 50%
+			hard_attack = 32.50 #was 65.0 reduced by 50%
 			ap_attack = 210
-			breakthrough = 9
+			breakthrough = 6.75 #was 9.0 reduced by 25%
 			defense = 5
 			air_attack = 1
 			build_cost_ic = 18
@@ -477,18 +478,19 @@ equipment_modules = {
 	}
 
 ############ ART Guns
-
+### MPR ###
+### soft_attack reduced by around 15% for artillery
 	tank_122mm = {
 		abbreviation = "122mm"
 		category = tank_art_guns
 		allow_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 40
-			hard_attack = 24
+			soft_attack = 35.00 #was 40.0
+			hard_attack = 12.00 #was 24.0 reduced by 50%
 			ap_attack = 80
-			breakthrough = 4
-			defense = 6
+			breakthrough = 3.00 #was 4.0 reduced by 25%
+			defense = 1 #6
 			build_cost_ic = 10
 		}
 		multiply_stats = {
@@ -506,11 +508,11 @@ equipment_modules = {
 		allow_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 55
-			hard_attack = 28
+			soft_attack = 45.00 #was 55.0
+			hard_attack = 14.00 #was 28.0 reduced by 50%
 			ap_attack = 90
-			breakthrough = 6
-			defense = 8
+			breakthrough = 4.50 #was 6.0 reduced by 25%
+			defense = 1 #8
 			build_cost_ic = 15
 		}
 		multiply_stats = {
@@ -528,11 +530,11 @@ equipment_modules = {
 		allow_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 70
-			hard_attack = 28
+			soft_attack = 63.00 #was 70.0
+			hard_attack = 14.00 #was 28.0 reduced by 50%
 			ap_attack = 90
-			breakthrough = 8
-			defense = 10
+			breakthrough = 6.00 #was 8.0 reduced by 25%
+			defense = 1 #10
 			build_cost_ic = 20
 		}
 		multiply_stats = {
@@ -550,11 +552,11 @@ equipment_modules = {
 		allow_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 45
-			hard_attack = 38
+			soft_attack = 38.50 #was 45.0
+			hard_attack = 19.00 #was 38.0 reduced by 50%
 			ap_attack = 40
-			breakthrough = 10
-			defense = 3
+			breakthrough = 7.50 #was 10.0 reduced by 25%
+			defense = 1 #3
 			build_cost_ic = 14
 		}
 		multiply_stats = {
@@ -573,11 +575,11 @@ equipment_modules = {
 
 
 		add_stats = {
-			soft_attack = 85
-			hard_attack = 24
+			soft_attack = 78.00 #was 85.0
+			hard_attack = 12.00 #was 24.0 reduced by 50%
 			ap_attack = 40
-			breakthrough = 11
-			defense = 13
+			breakthrough = 8.25 #was 11.0 reduced by 25%
+			defense = 1 #13
 			build_cost_ic = 30
 		}
 		multiply_stats = {
@@ -598,11 +600,11 @@ equipment_modules = {
 
 
 		add_stats = {
-			soft_attack = 50
-			hard_attack = 20
+			soft_attack = 44.00 #was 50.0 reduced by 50%
+			hard_attack = 10.00 #was 20.0 reduced by 50%
 			ap_attack = 40
-			breakthrough = 8
-			defense = 4
+			breakthrough = 6.00 #was 8.0 reduced by 25%
+			defense = 1 #4
 			build_cost_ic = 8
 		}
 		multiply_stats = {
@@ -621,11 +623,11 @@ equipment_modules = {
 
 
 		add_stats = {
-			soft_attack = 70
-			hard_attack = 25
+			soft_attack = 63.00 #was 70.0 reduced by 50%
+			hard_attack = 12.50 #was 25.0 reduced by 50%
 			ap_attack = 40
-			breakthrough = 10
-			defense = 5
+			breakthrough = 7.50 #was 10.0 reduced by 25%
+			defense = 1 #5
 			build_cost_ic = 14
 		}
 		multiply_stats = {
@@ -644,11 +646,11 @@ equipment_modules = {
 
 
 		add_stats = {
-			soft_attack = 90
-			hard_attack = 30
+			soft_attack = 82.00 #was 90.0 reduced by 50%
+			hard_attack = 15.00 #was 30.0 reduced by 50%
 			ap_attack = 40
-			breakthrough = 12
-			defense = 9
+			breakthrough = 9.00 #was 12.0 reduced by 25%
+			defense = 1 #9
 			build_cost_ic = 18
 		}
 		multiply_stats = {
@@ -667,11 +669,11 @@ equipment_modules = {
 
 
 		add_stats = {
-			soft_attack = 120
-			hard_attack = 40
+			soft_attack = 105.00 #was 120.0 reduced by 50%
+			hard_attack = 20.00 #was 40.0 reduced by 50%
 			ap_attack = 40
-			breakthrough = 6
-			defense = 4
+			breakthrough = 4.50 #was 6.0 reduced by 25%
+			defense = 1 #4
 			build_cost_ic = 15
 		}
 		multiply_stats = {
@@ -700,10 +702,10 @@ equipment_modules = {
 		}
 		
 		add_stats = {
-			soft_attack = 13
-			hard_attack = 10
+			soft_attack = 6.50 #was 13.0 reduced by 50%
+			hard_attack = 5.00 #was 10.0 reduced by 50%
 			ap_attack = 21
-			breakthrough = 2.5
+			breakthrough = 1.88 #was 2.5 reduced by 25%
 			defense = 1
 			air_attack = 5
 			build_cost_ic = 2.3
@@ -731,10 +733,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 17
-			hard_attack = 14
+			soft_attack = 8.50 #was 17.0 reduced by 50%
+			hard_attack = 7.00 #was 14.0 reduced by 50%
 			ap_attack = 21
-			breakthrough = 3
+			breakthrough = 2.25 #was 3.0 reduced by 25%
 			defense = 1.3
 			air_attack = 9
 			build_cost_ic = 3.6
@@ -763,10 +765,10 @@ equipment_modules = {
 		}
 
 		add_stats = {
-			soft_attack = 23
-			hard_attack = 28
+			soft_attack = 11.50 #was 23.0 reduced by 50%
+			hard_attack = 14.00 #was 28.0 reduced by 50%
 			ap_attack = 27
-			breakthrough = 4.5
+			breakthrough = 3.38 #was 4.5 reduced by 25%
 			defense = 2
 			air_attack = 15
 			build_cost_ic = 7
@@ -1014,9 +1016,9 @@ tank_light_aa2 = {
 		category = tank_atmissle_guns
 
 		add_stats = {
-			hard_attack = 40
+			hard_attack = 20.00 #was 40.0 reduced by 50%
 			ap_attack = 60
-			breakthrough = 2.5
+			breakthrough = 1.88 #was 2.5 reduced by 25%
 			defense = 1
 			air_attack = 3
 			build_cost_ic = 2.5
@@ -1035,9 +1037,9 @@ tank_light_aa2 = {
 		category = tank_atmissle_guns
 
 		add_stats = {
-			hard_attack = 60
+			hard_attack = 30.00 #was 60.0 reduced by 50%
 			ap_attack = 130
-			breakthrough = 3.5
+			breakthrough = 2.62 #was 3.5 reduced by 25%
 			defense = 2
 			air_attack = 3
 			build_cost_ic = 4.5
@@ -1056,14 +1058,14 @@ tank_light_aa2 = {
 		category = tank_atTKmissle_guns
 
 		add_stats = {
-			hard_attack = 50
+			hard_attack = 25.00 #was 50.0 reduced by 50%
 			air_attack = 3
 			build_cost_ic = 6
 		}
 		multiply_stats = {
 			ap_attack = 0.3
 			reliability = -0.03
-			breakthrough = 0.15
+			breakthrough = 0.11 #was 0.15 reduced by 25%
 			defense = 0.1
 		}
 		dismantle_cost_ic = 6
@@ -1076,14 +1078,14 @@ tank_light_aa2 = {
 		category = tank_atTmissle_guns
 
 		add_stats = {
-			hard_attack = 60
+			hard_attack = 30.00 #was 60.0 reduced by 50%
 			air_attack = 3
 			build_cost_ic = 8
 		}
 		multiply_stats = {
 			ap_attack = 0.3
 			reliability = -0.03
-			breakthrough = 0.2
+			breakthrough = 0.15 #was 0.2 reduced by 25%
 			defense = 0.2
 		}
 		dismantle_cost_ic = 8
@@ -1096,13 +1098,13 @@ tank_light_aa2 = {
 		category = tank_atBmissle_guns
 
 		add_stats = {
-			hard_attack = 60
+			hard_attack = 30.00 #was 60.0 reduced by 50%
 			build_cost_ic = 10
 		}
 		multiply_stats = {
 			ap_attack = 0.3
 			reliability = -0.03
-			breakthrough = 0.25
+			breakthrough = 0.19 #was 0.25 reduced by 25%
 			defense = 0.2
 		}
 		dismantle_cost_ic = 8
@@ -1115,13 +1117,13 @@ tank_light_aa2 = {
 		category = tank_atBmissle_guns
 
 		add_stats = {
-			hard_attack = 70
+			hard_attack = 35.00 #was 70.0 reduced by 50%
 			build_cost_ic = 12
 		}
 		multiply_stats = {
 			reliability = -0.03
 			ap_attack = 0.4
-			breakthrough = 0.15
+			breakthrough = 0.11 #was 0.15 reduced by 25%
 			defense = 0.1
 		}
 		dismantle_cost_ic = 12
@@ -1135,9 +1137,9 @@ tank_light_aa2 = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			hard_attack = 70
+			hard_attack = 35.00 #was 70.0 reduced by 50%
 			ap_attack = 200
-			breakthrough = 7
+			breakthrough = 5.25 #was 7.0 reduced by 25%
 			defense = 3.5
 			air_attack = 3
 			build_cost_ic = 11
@@ -1157,10 +1159,10 @@ tank_light_aa2 = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 14
-			hard_attack = 100
+			soft_attack = 7.00 #was 14.0 reduced by 50%
+			hard_attack = 50.00 #was 100.0 reduced by 50%
 			ap_attack = 240
-			breakthrough = 8
+			breakthrough = 6.00 #was 8.0 reduced by 25%
 			defense = 5
 			air_attack = 5
 			build_cost_ic = 14
@@ -1179,10 +1181,10 @@ tank_light_aa2 = {
 		category = tank_atmissle_guns
 
 		add_stats = {
-			soft_attack = 14
-			hard_attack = 70
+			soft_attack = 7.00 #was 14.0 reduced by 50%
+			hard_attack = 35.00 #was 70.0 reduced by 50%
 			ap_attack = 180
-			breakthrough = 7
+			breakthrough = 5.25 #was 7.0 reduced by 25%
 			defense = 3
 			air_attack = 5
 			build_cost_ic = 8
@@ -1202,10 +1204,10 @@ tank_light_aa2 = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 20
-			hard_attack = 90
+			soft_attack = 10.00 #was 20.0 reduced by 50%
+			hard_attack = 45.00 #was 90.0 reduced by 50%
 			ap_attack = 180
-			breakthrough = 8
+			breakthrough = 6.00 #was 8.0 reduced by 25%
 			defense = 4
 			air_attack = 5
 			build_cost_ic = 12
@@ -1225,10 +1227,10 @@ tank_light_aa2 = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 25
-			hard_attack = 110
+			soft_attack = 12.50 #was 25.0 reduced by 50%
+			hard_attack = 55.00 #was 110.0 reduced by 50%
 			ap_attack = 180
-			breakthrough = 9
+			breakthrough = 6.75 #was 9.0 reduced by 25%
 			defense = 6
 			air_attack = 7
 			build_cost_ic = 17
@@ -1247,14 +1249,14 @@ tank_light_aa2 = {
 		category = tank_atTmissle_guns
 
 		add_stats = {
-			hard_attack = 70
+			hard_attack = 35.00 #was 70.0 reduced by 50%
 			air_attack = 15
 			build_cost_ic = 12
 		}
 		multiply_stats = {
 			reliability = -0.03
 			ap_attack = 0.4
-			breakthrough = 0.25
+			breakthrough = 0.19 #was 0.25 reduced by 25%
 			defense = 0.2
 		}
 		dismantle_cost_ic = 12
