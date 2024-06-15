@@ -1,7 +1,7 @@
 sub_units = {
 
     Osadny_SAU  = {
-    sprite = Osadny_SAU
+    sprite = artillery_nig
     map_icon_category = armored
     ai_priority = 5
     priority = 5
@@ -60,16 +60,7 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			attack = 0.40
-		}
-		industrial = {
-			attack = 0.45
-		}
-		residential = {
-			attack = 0.50
-		}
-		village = {
-			attack = 0.55
+			attack = 0.4
 		}
 		river = { 
 			attack = -0.4 
@@ -79,12 +70,12 @@ sub_units = {
 			attack = -0.9
 		}
 		fort = {
-			attack = 0.9
+			attack = 0.8
 		}
     }
 
     Polevoi_SAU   = {
-    sprite = Osadny_SAU
+    sprite = artillery_nig
     map_icon_category = armored
     ai_priority = 5
     priority = 5
@@ -150,19 +141,7 @@ sub_units = {
 			attack = -0.9
 		}
 		fort = {
-			attack = 0.4
-		}
-		urban = {
-			attack = 0.04
-		}
-		industrial = {
-			attack = 0.08
-		}
-		residential = {
-			attack = 0.12
-		}
-		village = {
-			attack = 0.16
+			attack = 0.6
 		}
     }
 
@@ -208,7 +187,7 @@ sub_units = {
             attack = 0.20
 		}
 		forest = {
-		    attack = 0.2
+		    attack = -0.3
 			movement = -0.4
 		}
 		hills = 	{
@@ -229,16 +208,7 @@ sub_units = {
 			movement = -0.1
 		}
 		urban = {
-			attack = 0.15
-		}
-		industrial = {
-			attack = 0.20
-		}
-		residential = {
-			attack = 0.25
-		}
-		village = {
-			attack = 0.30
+			attack = 0.3
 		}
 		river = { 
 			movement = -0.3
@@ -248,7 +218,7 @@ sub_units = {
             movement = -0.6 
 		}
 		fort = {
-			attack = 0.6
+			attack = 1.4
 		}
     }
 
@@ -311,16 +281,8 @@ sub_units = {
 			movement = -0.1
 		}
 		urban = {
-			attack = 0.04
-		}
-		industrial = {
-			attack = 0.08
-		}
-		residential = {
-			attack = 0.12
-		}
-		village = {
-			attack = 0.16
+			attack = 0.3
+			defence = -0.1
 		}
 		river = {
             attack = 0.1
@@ -335,8 +297,8 @@ sub_units = {
 		}
     }
 
-artillery  = {
-    sprite = artillery
+artillery_nig  = {
+    sprite = artillery_nig
     map_icon_category = infantry
     ai_priority = 5
     priority = 5
@@ -375,8 +337,8 @@ artillery  = {
 		can_be_parachuted = yes
     }
 
-	artillery_brigade = {
-    sprite = artillery
+	artillery_brigade_nig  = {
+    sprite = artillery_nig
     map_icon_category = infantry
     ai_priority = 5
     priority = 5

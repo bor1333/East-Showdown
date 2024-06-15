@@ -9,11 +9,6 @@ BLR_influence_category = {
 		tag = UKR
 		tag = POL
 		}
-		NOT = {
-			BPR = {
-				exists = yes
-			}
-		}
 	}
 	visible_when_empty = yes
 	scripted_gui = BLR_influence_category
@@ -25,11 +20,6 @@ BLR_RUS_Union = {
 		OR = {
 		tag = BLR
 		tag = RUS
-		}
-		NOT = {
-			BPR = {
-				exists = yes
-			}
 		}
 	}
 	visible_when_empty = yes

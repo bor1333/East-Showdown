@@ -1,4 +1,3 @@
-#Реворк Польши: Jason, Hershel, Петлюра
 oob = "POL_2022"
 
 capital = 48
@@ -964,13 +963,6 @@ oborudovanie4 = 1
 t80korpus = 1
 	
 
-}
-
-add_ideas = {
-POL_National_Humiliation
-POL_Polish_Army
-POL_Polish_ambitions
-POL_Military_industrial_complex_Poland
 }
 
 

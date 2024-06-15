@@ -4,20 +4,18 @@ scripted_gui = {
 		window_name = "BLR_influence_window"
 		visible = {
             always = yes
+			
         }
 
         ai_enabled = {
             original_tag = rus
         }
 		properties = {
-		    BLR_flag = {
-				image = "[get_BLR_Flag]"
+		    BEL_flag = {
+				image = "[get_Bel_Flag]"
 			}
-			BLR_Armorial = {
-				image = "[get_BLR_Armorial]"
-			}
-			Influence_Lukashenko = {
-				image = "[get_Lukash_portrait]"
+			BEL_Gerv = {
+				image = "[get_Bel_Gerv]"
 			}
 		}
 	}
@@ -27,22 +25,20 @@ scripted_gui = {
 		visible = {
             always = yes
         }
+
         ai_enabled = {
 			OR = {
-				original_tag = RUS
-				original_tag = BLR
+				original_tag = rus
+				original_tag = blr
 			}
         }
 
 		properties = {
-			Ally_State_Lukashenko = {
-				image = "[get_Lukash_portrait]"
+			BLR_ally_state_inf = {
+				x = BLR.ally_state_inf_pos
 			}
-			Ally_State_Putin = {
-				image = "[get_Putin_portrait]"
-			}
-			BLR_ally_state_progressbar = {
-				frame = BLR_ally_state_inf_summ
+			RUS_ally_state_inf = {
+				x = RUS.ally_state_inf_pos
 			}
 		}
 	}

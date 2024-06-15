@@ -6,52 +6,52 @@ scripted_gui = {
 	
 		 triggers = {
 			volunteer_level_1_text_visible = {
-				check_variable = {
+					check_variable = {
 					var = UKR_volunteerACT
-					value = 60
+					value = 100
 					compare = less_than
 				}
 			}
 			volunteer_level_2_text_visible = {
-				check_variable = {
-					var = UKR_volunteerACT
-					value = 60
-					compare = greater_than_or_equals
-				}
-				check_variable = {
-					var = UKR_volunteerACT
-					value = 100
-					compare = less_than
-				}				
-			}
-			volunteer_level_3_text_visible = {
-				check_variable = {
+					check_variable = {
 					var = UKR_volunteerACT
 					value = 100
 					compare = greater_than_or_equals
 				}
 					check_variable = {
 					var = UKR_volunteerACT
-					value = 170
+					value = 200
+					compare = less_than
+				}				
+			}
+			volunteer_level_3_text_visible = {
+					check_variable = {
+					var = UKR_volunteerACT
+					value = 200
+					compare = greater_than_or_equals
+				}
+					check_variable = {
+					var = UKR_volunteerACT
+					value = 300
 					compare = less_than
 				}				
 			}
 			volunteer_level_4_text_visible = {
-				check_variable = {
+					check_variable = {
 					var = UKR_volunteerACT
-					value = 170
+					value = 300
 					compare = greater_than_or_equals
 				}
-				check_variable = {
+					check_variable = {
 					var = UKR_volunteerACT
-					value = 270
+					value = 400
 					compare = less_than
 				}				
 			}
 			volunteer_level_5_text_visible = {
-				check_variable = {
+					check_variable = {
 					var = UKR_volunteerACT
-					value = 270
+					value = 400
 					compare = greater_than_or_equals 
 				}
 			}

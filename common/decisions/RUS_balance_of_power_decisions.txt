@@ -13,7 +13,6 @@ RUS_balance_of_power_category = {
 			tag = RUS
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision rf_expand_power"
 			add_stability = 0.05
 			add_power_balance_value = {
 				id = RUS_power_balance
@@ -40,7 +39,6 @@ RUS_balance_of_power_category = {
 			tag = RUS
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision increase_funding"
 			add_power_balance_value = {
 				id = RUS_power_balance
 				value = 0.15
@@ -68,7 +66,6 @@ RUS_balance_of_power_category = {
 			tag = RUS
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_RF_advertisement"
 			add_power_balance_value = {
 				id = RUS_power_balance
 				value = 0.1
@@ -95,7 +92,6 @@ RUS_balance_of_power_category = {
 			tag = RUS
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_Telegramm_AD"
 			add_stability = 0.1
 			add_power_balance_value = {
 				id = RUS_power_balance
@@ -128,7 +124,6 @@ RUS_balance_of_power_category = {
 		}
 
 		complete_effect = {	
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_mass_media"
 			add_stability = 0.05
 		    add_war_support = 0.05
 			add_power_balance_value = {
@@ -157,7 +152,6 @@ RUS_balance_of_power_category = {
 			tag = RUS
 		}
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_Wagner_discrediting"
 			add_power_balance_value = {
 				id = RUS_power_balance
 				value = 0.15
@@ -190,7 +184,6 @@ RUS_balance_of_power_category = {
 			tag = RUS
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_conspiracy_wagner"
 			set_global_flag = WGN_shell_hunger_flag
 			WGN = {
 				swap_ideas = {

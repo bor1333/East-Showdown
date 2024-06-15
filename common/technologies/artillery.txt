@@ -243,8 +243,8 @@ technologies = {
 		enable_subunits = {
 			Osadny_SAU
 			Polevoi_SAU
-			artillery
-			artillery_brigade
+			artillery_nig
+			artillery_brigade_nig
 		}
 
 		enable_equipments = {

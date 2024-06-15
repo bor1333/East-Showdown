@@ -62,24 +62,9 @@ BTR = {
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.40
-			movement = -0.40
-			defence = 0.10
-		}
-		industrial = {
-			attack = -0.35
-			movement = -0.35
-			defence = 0.10
-		}
-		residential = {
-			attack = -0.30
-			movement = -0.30
-			defence = 0.10
-		}
-		village = {
-			attack = -0.25
-			movement = -0.25
-			defence = 0.10
+			attack = -0.4
+			movement = -0.4
+			defence = 1.0
 		}
 		amphibious = { 
 			attack = -0.2
@@ -150,24 +135,9 @@ BTR_nato = {
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.40
-			movement = -0.40
-			defence = 0.10
-		}
-		industrial = {
-			attack = -0.35
-			movement = -0.35
-			defence = 0.10
-		}
-		residential = {
-			attack = -0.30
-			movement = -0.30
-			defence = 0.10
-		}
-		village = {
-			attack = -0.25
-			movement = -0.25
-			defence = 0.10
+			attack = -0.4
+			movement = -0.4
+			defence = 1.0
 		}
 		amphibious = { 
 			attack = -0.2

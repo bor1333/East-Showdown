@@ -7,28 +7,24 @@ BLR_alexander_lukashenko = {
 		civilian = {
 			large = "GFX_BLR_alexander_lukashenko"
 		}
-		army = {
-			large = "GFX_BLR_alexander_lukashenko_army"
-		}
 	}
 	country_leader = {
 		ideology = despotism
 		traits = { 
 			batka
-		}
+		 }
 	}
 }
-BLR_oleg_gaidukevich = {
-	name = BLR_oleg_gaidukevich
+BLR_svetlana_tikhanovskaya = {
+	name = BLR_svetlana_tikhanovskaya
 	portraits = {
 		civilian = {
-			large = "GFX_BLR_oleg_gaidukevich"
+			large = "GFX_BLR_svetlana_tikhanovskaya"
 		}
 	}
 	country_leader = {
-		ideology = controlled_democracy
-		traits = { 
-		}
+		ideology = liberal_democracy
+		traits = {}
 	}
 }
 BLR_alexey_sokol = {

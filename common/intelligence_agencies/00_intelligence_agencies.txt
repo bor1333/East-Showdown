@@ -10,7 +10,7 @@ intelligence_agency = {
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_sov
-	names = { "Sluzhba vneshney razvedki RF" }
+	names = { "FSB" }
 	
 	default = { tag = RUS }
 	available = { original_tag = RUS }

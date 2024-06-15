@@ -15,8 +15,6 @@ bookmarks = {
 				UKR_Agranary_of_Europe
 			}
 			focuses = {
-			    United_country
-				A_cry_for_help_to_the_West
 			}	
 		}
 		
@@ -30,8 +28,6 @@ bookmarks = {
 				economic_stagnation
 			}
 			focuses = {
-			    RUS_SMO
-				RUS_Putins_course
 			}
 		}
 		"NTO"={
@@ -76,8 +72,6 @@ bookmarks = {
 				BLR_destroyed_opposition
 			}
 			focuses = {
-				BLR_plan_the_third_republic_referendum
-				BLR_expand_KGB
 			}
 		}
 		"DPR"={

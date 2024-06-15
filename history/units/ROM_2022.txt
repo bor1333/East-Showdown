@@ -83,7 +83,7 @@ division_template = {
 			x = 0
 			y = 2
 		}
-		artillery = {
+		artillery_nig = {
 			x = 0
 			y = 3
 		}
@@ -139,6 +139,10 @@ division_template = {
 			x = 0
 			y = 3
 		}
+		anti_air = {
+			x = 0
+			y = 4
+		}
 	}
 }
 
@@ -160,6 +164,10 @@ division_template = {
 		artillery_brigade = {
 			x = 0
 			y = 2
+		}
+		anti_air_brigade = {
+			x = 1
+			y = 0
 		}
 	}
 	support = {

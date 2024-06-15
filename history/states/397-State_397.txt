@@ -3,10 +3,10 @@ state = {
 	name = "STATE_397"
 	manpower = 142973
 
-	state_category = enclave
+	state_category = small_town
 
 	provinces = {
-		345 1437 2034 4438 11358 13087 15909 18733 18734 
+		345 1437 2034 11358 13087 15909 18733 18734 19203 
 	}
 
 	history = {
